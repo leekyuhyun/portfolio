@@ -1,15 +1,23 @@
 <template>
-  <header class="header">
-    <div class="container header-inner">
-      <a href="#" class="logo">kyulee's Portfolio</a>
-      <nav class="nav">
-        <ul>
-          <li><a href="#about">&lt;About Me /&gt;</a></li>
-          <li><a href="#skills">&lt;Skills /&gt;</a></li>
-          <li><a href="#projects">&lt;Projects /&gt;</a></li>
-          <li><a href="#contact">&lt;Contact /&gt;</a></li>
+  <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-bold fs-4" href="#">kyulee's Portfolio</a>
+      <div class="collapse navbar-collapse justify-content-end">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">&lt;About Me /&gt;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">&lt;Skills /&gt;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">&lt;Projects /&gt;</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">&lt;Contact /&gt;</a>
+          </li>
         </ul>
-      </nav>
+      </div>
     </div>
   </header>
 </template>
@@ -17,43 +25,13 @@
 <script setup></script>
 
 <style scoped>
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.85);
-  backdrop-filter: blur(10px);
-  z-index: 1000;
+.navbar {
   height: var(--header-height);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s;
+  background-color: rgba(255, 255, 255, 0.85) !important;
+  backdrop-filter: blur(10px);
 }
-
-.header-inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  height: 100%;
-}
-
-.logo {
-  font-weight: bold;
-  font-size: 2rem;
-}
-
-.nav ul {
-  display: flex;
-  gap: 2rem;
-}
-
-.nav a {
-  font-size: 1.4rem;
+.nav-link {
   font-weight: 500;
-  transition: color 0.3s;
-  padding: 0.5rem 1rem;
-}
-
-.nav a:hover {
-  color: var(--primary-color);
 }
 </style>
