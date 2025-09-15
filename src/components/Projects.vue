@@ -218,11 +218,25 @@ const openModal = project => {
   font-size: 1.4rem;
   line-height: 1.6;
 }
+
+/* --- ▼ 태그(badge) 스타일 및 호버 효과 추가 ▼ --- */
 .badge {
   font-size: 1.1rem;
   padding: 0.5em 0.75em;
   font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
 }
+
+.badge:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+/* ------------------------------------------- */
+
 .modal-title {
   font-weight: bold;
 }
@@ -241,7 +255,6 @@ const openModal = project => {
   padding-bottom: 0.5rem;
 }
 
-/* --- 반응형 스타일 추가 --- */
 @media (max-width: 768px) {
   .project-type-title {
     font-size: 2rem;
