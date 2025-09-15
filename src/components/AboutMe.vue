@@ -4,13 +4,9 @@
       <h2 class="section-title text-center">&lt;ABOUT ME /&gt;</h2>
 
       <div class="about-card shadow-sm">
-        <div class="row align-items-center justify-content-between">
+        <div class="row align-items-center justify-content-between gy-5">
           <div class="col-lg-4 text-center">
-            <img
-              :src="getImageUrl(info.profile.imageUrl)"
-              class="rounded-circle"
-              alt="프로필 사진"
-            />
+            <img :src="getImageUrl(info.profile.imageUrl)" class="profile-img" alt="프로필 사진" />
           </div>
 
           <div class="col-lg-6">
@@ -87,9 +83,9 @@ const getImageUrl = path => {
   border: 1px solid #f0f0f0;
 }
 
-.rounded-circle {
-  width: 35rem;
-  height: 40rem;
+.profile-img {
+  width: 30rem;
+  height: 35rem;
   object-fit: cover;
   border: 5px solid #f8f9fa;
   border-radius: 50%;
@@ -107,5 +103,32 @@ a {
 
 a:hover {
   text-decoration: underline;
+}
+
+/* --- 반응형 스타일 추가 --- */
+@media (max-width: 992px) {
+  .about-card {
+    padding: 3rem;
+  }
+  .profile-img {
+    width: 25rem;
+    height: 28rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .about-card {
+    padding: 2rem;
+  }
+  .profile-img {
+    width: 20rem;
+    height: 23rem;
+  }
+  ul {
+    text-align: center; /* 모바일에서 텍스트 중앙 정렬 */
+  }
+  .d-flex {
+    justify-content: center; /* 아이콘과 텍스트 중앙 정렬 */
+  }
 }
 </style>

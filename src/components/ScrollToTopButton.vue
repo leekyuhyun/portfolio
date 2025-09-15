@@ -63,4 +63,15 @@ onUnmounted(() => {
 .fade-leave-to {
   opacity: 0;
 }
+
+/* --- 반응형 스타일 추가 --- */
+@media (max-width: 768px) {
+  .scroll-top-btn {
+    width: 4.5rem;
+    height: 4.5rem;
+    font-size: 2rem;
+    right: 2rem;
+    bottom: 2rem;
+  }
+}
 </style>

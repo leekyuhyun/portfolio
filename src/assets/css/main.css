@@ -6,7 +6,7 @@
   --text-light-color: #f8f9fa;
 
   --bg-skills-section: lightblue;
-  --bg-projects-section: lightgreen;
+  --bg-projects-section: #f8f9fa;
   --header-height: 6rem;
 
   --font-main: 'Noto Sans KR', sans-serif;
@@ -24,11 +24,9 @@ body {
   line-height: 1.6;
 }
 
-/* 부트스트랩의 .container 클래스를 사용하므로 기존 .container는 삭제 */
-
 .section {
   /* 부트스트랩의 spacing 유틸리티(p-5 등)를 사용할 것이므로 padding 최소화 */
-  padding: 8rem 0;
+  padding: 8rem 1rem; /* 좌우 패딩 추가 */
 }
 
 .section-title {
@@ -44,4 +42,38 @@ body {
 
 #projects {
   background-color: var(--bg-projects-section);
+}
+
+/* --- 반응형 웹을 위한 미디어 쿼리 --- */
+
+/* 태블릿 (768px 이하) */
+@media (max-width: 768px) {
+  html {
+    font-size: 55%; /* 기본 폰트 크기 살짝 줄이기 */
+  }
+
+  .section {
+    padding: 6rem 2rem;
+  }
+
+  .section-title {
+    font-size: 3rem;
+    margin-bottom: 4rem;
+  }
+}
+
+/* 모바일 (576px 이하) */
+@media (max-width: 576px) {
+  html {
+    font-size: 50%; /* 모바일에서 기본 폰트 크기 더 줄이기 */
+  }
+
+  .section {
+    padding: 5rem 1.5rem;
+  }
+
+  .section-title {
+    font-size: 2.8rem;
+    margin-bottom: 3rem;
+  }
 }

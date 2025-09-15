@@ -10,7 +10,6 @@
     </div>
   </section>
 </template>
-ㄴㄴ
 <script setup></script>
 
 <style scoped>
@@ -19,5 +18,21 @@
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('@/assets/image/Introduct.png') no-repeat center center/cover;
+}
+
+/* --- 반응형 스타일 추가 --- */
+@media (max-width: 768px) {
+  #introduction {
+    height: 70vh;
+  }
+  .display-2 {
+    font-size: calc(1.625rem + 4.5vw); /* 부트스트랩 기본값 활용 */
+  }
+  .fs-1 {
+    font-size: calc(1.375rem + 1.5vw) !important;
+  }
+  .fs-2 {
+    font-size: calc(1.325rem + 0.9vw) !important;
+  }
 }
 </style>

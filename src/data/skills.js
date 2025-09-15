@@ -15,8 +15,10 @@ export const skillsData = [
     name: 'Frontend',
     skills: [
       { name: 'Vue.js', color: '#4FC08D' },
+      { name: 'Vue-Router', color: '#4FC08D' },
       { name: 'React', color: '#61DAFB' },
-      { name: 'JSX', color: '#61DAFB' },
+      { name: 'JSP', color: '#F05032' },
+      { name: 'Vite', color: '#4FC08D' },
       { name: 'Axios', color: '#181717' },
       { name: 'Bootstrap', color: '#AE21C4' },
       { name: 'ESLint', color: '#4B32C3' },
@@ -36,7 +38,10 @@ export const skillsData = [
   {
     name: 'Database',
     icon: '@/assets/image/database-icon.png',
-    skills: [{ name: 'MySQL', color: '#2496ED' }],
+    skills: [
+      { name: 'MySQL', color: '#2496ED' },
+      { name: 'JDBC', color: '#2496ED' },
+    ],
   },
 
   {

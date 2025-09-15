@@ -116,4 +116,22 @@ const skillCategories = ref(skillsData)
   /* 그림자를 조금 더 진하게 만들어 입체감 부여 */
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
+
+/* --- 반응형 스타일 추가 --- */
+@media (max-width: 768px) {
+  .skills-card {
+    grid-template-columns: 1fr; /* 한 줄에 하나씩 표시 */
+    gap: 2rem;
+    padding: 3rem;
+  }
+  .category-title {
+    font-size: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    justify-content: center; /* 아이콘과 텍스트 중앙 정렬 */
+  }
+  .skills-tags {
+    justify-content: center; /* 태그 중앙 정렬 */
+  }
+}
 </style>
