@@ -12,23 +12,23 @@
           <div class="col-lg-6">
             <ul class="list-unstyled fs-4">
               <li class="d-flex align-items-center mb-4">
-                <img src="@/assets/image/user-icon.png" class="icon me-3" />
+                <img src="/assets/image/user-icon.png" class="icon me-3" />
                 <span>{{ info.profile.name }}</span>
               </li>
               <li class="d-flex align-items-center mb-3">
-                <img src="@/assets/image/birth-icon.png" class="icon me-3" />
+                <img src="/assets/image/birth-icon.png" class="icon me-3" />
                 <span>{{ info.profile.birth }}</span>
               </li>
               <li class="d-flex align-items-center mb-3">
-                <img src="@/assets/image/home-icon.png" class="icon me-3" />
+                <img src="/assets/image/home-icon.png" class="icon me-3" />
                 <span>{{ info.profile.address }}</span>
               </li>
               <li class="d-flex align-items-center mb-3">
-                <img src="@/assets/image/mail-icon.png" class="icon me-3" />
+                <img src="/assets/image/mail-icon.png" class="icon me-3" />
                 <span>{{ info.profile.email }}</span>
               </li>
               <li class="d-flex align-items-center">
-                <img src="@/assets/image/school-icon.png" class="icon me-3" />
+                <img src="/assets/image/school-icon.png" class="icon me-3" />
                 <span>{{ info.profile.education }}</span>
               </li>
 

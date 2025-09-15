@@ -17,7 +17,7 @@
   height: 80vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url('@/assets/image/Introduct.png') no-repeat center center/cover;
+    url('/assets/image/Introduct.png') no-repeat center center/cover;
 }
 
 /* --- 반응형 스타일 추가 --- */

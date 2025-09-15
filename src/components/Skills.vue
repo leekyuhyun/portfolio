@@ -68,25 +68,25 @@ const skillCategories = ref(skillsData)
 
 /* --- 각 아이콘에 대한 배경 이미지 경로 설정 --- */
 .category-icon.language {
-  background-image: url('@/assets/image/language-icon.png');
+  background-image: url('/assets/image/language-icon.png');
 }
 .category-icon.frontend {
-  background-image: url('@/assets/image/frontend-icon.png');
+  background-image: url('/assets/image/frontend-icon.png');
 }
 .category-icon.backend {
-  background-image: url('@/assets/image/backend-icon.png');
+  background-image: url('/assets/image/backend-icon.png');
 }
 .category-icon.database {
-  background-image: url('@/assets/image/database-icon.png');
+  background-image: url('/assets/image/database-icon.png');
 }
 .category-icon.devops-version-control {
-  background-image: url('@/assets/image/devops-icon.png');
+  background-image: url('/assets/image/devops-icon.png');
 }
 .category-icon.design-collaboration {
-  background-image: url('@/assets/image/design-icon.png');
+  background-image: url('/assets/image/design-icon.png');
 }
 .category-icon.ai-productivity {
-  background-image: url('@/assets/image/ai-icon.png');
+  background-image: url('/assets/image/ai-icon.png');
 }
 /* ------------------------------------ */
 

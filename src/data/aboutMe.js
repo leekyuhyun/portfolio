@@ -1,7 +1,7 @@
 // About Me 섹션의 데이터를 객체 형태로 관리합니다.
 export const aboutMeData = {
   profile: {
-    imageUrl: '@/assets/image/Profile.jpg',
+    imageUrl: '/assets/image/Profile.jpg',
     name: '이규현',
     birth: '2001.05.02',
     address: '경기도 시흥시',
@@ -12,22 +12,22 @@ export const aboutMeData = {
     {
       name: 'Instagram',
       url: 'https://www.instagram.com/leeeeeee_kyu_h',
-      icon: '@/assets/image/instagram-icon.png',
+      icon: '/assets/image/instagram-icon.png',
     },
     {
       name: 'GitHub',
       url: 'https://github.com/leekyuhyun',
-      icon: '@/assets/image/git-icon.png',
+      icon: '/assets/image/git-icon.png',
     },
     {
       name: 'Velog',
       url: 'https://velog.io/@leekh010502',
-      icon: '@/assets/image/vlog-icon.png',
+      icon: '/assets/image/vlog-icon.png',
     },
   ],
   activity: {
     title: '주요 활동', // 활동들의 통합 제목
-    icon: '@/assets/image/activity-icon.png', // 대표 아이콘
+    icon: '/assets/image/activity-icon.png', // 대표 아이콘
     description: `
       <b>2023.09 ~ 2023.12</b><br/>
       서버 프로그래밍 프로젝트 진행 (안양대학교)<br/>

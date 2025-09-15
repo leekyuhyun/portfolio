@@ -8,7 +8,7 @@
               <h2 class="card-title display-6 fw-bold mb-3">&lt;Contact /&gt;</h2>
               <p class="card-text text-muted fs-4 mb-4">Thank you : )</p>
               <img
-                src="@/assets/image/Contact-Image.png"
+                src="/assets/image/Contact-Image.png"
                 class="img-fluid rounded"
                 alt="Contact image"
               />
