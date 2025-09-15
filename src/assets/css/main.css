@@ -5,8 +5,8 @@
   --text-color: #212529;
   --text-light-color: #f8f9fa;
 
-  --bg-skills-section: #a0e9de;
-  --bg-projects-section: #e9ecef;
+  --bg-skills-section: lightblue;
+  --bg-projects-section: lightgreen;
   --header-height: 6rem;
 
   --font-main: 'Noto Sans KR', sans-serif;

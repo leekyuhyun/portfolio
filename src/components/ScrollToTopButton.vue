@@ -35,8 +35,8 @@ onUnmounted(() => {
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
-  background-color: var(--primary-color);
-  color: white;
+  background-color: lightcyan;
+  color: skyblue;
   border: none;
   font-size: 2.4rem;
   font-weight: bold;

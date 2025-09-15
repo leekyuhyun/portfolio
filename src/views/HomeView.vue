@@ -21,9 +21,3 @@ import Projects from '@/components/Projects.vue'
 import Contact from '@/components/Contact.vue'
 import Footer from '@/components/Footer.vue'
 </script>
-
-<style scoped>
-main {
-  padding-top: var(--header-height);
-}
-</style>

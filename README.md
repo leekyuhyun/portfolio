@@ -1,35 +1,46 @@
-# portfolio
+# 📖 개인 포트폴리오 웹사이트
 
-This template should help get you started developing with Vue 3 in Vite.
+Vue.js와 Vite를 기반으로 제작한 반응형 개인 포트폴리오 웹사이트입니다. 컴포넌트 기반 아키텍처와 데이터 분리를 통해 유지보수성과 확장성을 높이는 데 중점을 두었습니다.
 
-## Recommended IDE Setup
+---
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+### 🔥 주요 기능 (Features)
 
-## Customize configuration
+- **동적 헤더**: 스크롤 위치에 따라 투명도와 배경색이 변하는 인터랙티브 헤더
+- **컴포넌트 기반 UI**: 각 섹션(About Me, Skills, Projects, Contact)을 독립된 컴포넌트로 분리하여 개발
+- **데이터 분리 아키텍처**: 자기소개, 기술 스택, 프로젝트 목록 등의 데이터를 별도의 `.js` 파일로 분리하여 관리 용이성 증대
+- **프로젝트 상세 보기**: README 버튼 클릭 시, 프로젝트의 상세 `README.md` 내용을 모달 창을 통해 동적으로 로드 및 표시
+- **반응형 디자인**: Bootstrap을 활용하여 데스크탑, 태블릿, 모바일 등 모든 디바이스에서 최적화된 화면 제공
+- **사용자 경험(UX) 개선**: '맨 위로 가기' 버튼, 부드러운 스크롤, 인터랙티브한 호버 효과 적용
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+---
 
-## Project Setup
+### 🛠️ 기술 스택 (Tech Stack)
 
-```sh
-npm install
-```
+- **Framework**: Vue.js 3
+- **Build Tool**: Vite
+- **UI/Styling**: Bootstrap 5, CSS3
+- **State Management**: Pinia
+- **Markdown Parsing**: Marked.js
+- **Code Quality**: ESLint, Prettier
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
-npm run dev
-```
+### 💡 프로젝트를 통해 얻은 경험
 
-### Compile and Minify for Production
+1.  **Vue.js 숙련도 향상**
+    - 컴포넌트의 생명주기(Lifecycle Hooks)를 이해하고 `onMounted`, `onUnmounted` 등을 활용하여 스크롤 이벤트와 같은 브라우저 API를 제어하는 능력을 길렀습니다.
+    - `ref`, `computed` 등 Composition API를 적극적으로 사용하여 데이터의 반응성을 효율적으로 관리했습니다.
 
-```sh
-npm run build
-```
+2.  **유지보수성 및 확장성 고려**
+    - 단순히 정보를 나열하는 것을 넘어, 향후 데이터가 추가되거나 변경될 상황을 고려했습니다. `skills.js`, `projects.js` 등 데이터를 외부 파일로 분리함으로써, 컴포넌트의 재사용성을 높이고 코드 수정 없이 내용만 쉽게 업데이트할 수 있는 구조를 설계했습니다.
 
-### Lint with [ESLint](https://eslint.org/)
+3.  **동적 데이터 처리**
+    - `fetch` API를 사용하여 외부(또는 내부 public)의 `.md` 파일을 비동기적으로 불러오고, `marked` 라이브러리로 파싱하여 동적으로 렌더링하는 경험을 통해 비동기 통신에 대한 이해를 높였습니다.
 
-```sh
-npm run lint
-```
+---
+
+### 💬 개선 및 보완할 점
+
+- **애니메이션**: 스크롤에 따른 컴포넌트 등장 애니메이션(Scroll Animation)을 추가하여 사용자 경험을 더욱 향상시킬 계획입니다.
+- **상태 관리**: 현재는 `ref`를 주로 사용하지만, 추후 기능이 복잡해질 경우를 대비하여 Pinia를 활용한 전역 상태 관리 로직을 추가할 예정입니다.
