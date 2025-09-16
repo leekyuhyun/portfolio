@@ -37,3 +37,18 @@ Vue.js와 Vite를 기반으로 제작한 반응형 개인 포트폴리오 웹사
 
 3.  **동적 데이터 처리**
     - `fetch` API를 사용하여 외부(또는 내부 public)의 `.md` 파일을 비동기적으로 불러오고, `marked` 라이브러리로 파싱하여 동적으로 렌더링하는 경험을 통해 비동기 통신에 대한 이해를 높였습니다.
+
+---
+
+## Acknowledgements
+
+This project uses icons from Flaticon.
+
+- [정체 아이콘 제작자: Freepik - Flaticon](https://www.flaticon.com/kr/free-icons/)
+- [생일 케이크 아이콘 제작자: Stasy - Flaticon](https://www.flaticon.com/kr/free-icons/-)
+- [Ui 아이콘 제작자: Element Warehouse - Flaticon](https://www.flaticon.com/kr/free-icons/ui)
+- [이메일 아이콘 제작자: Those Icons - Flaticon](https://www.flaticon.com/kr/free-icons/)
+- [학교 아이콘 제작자: Freepik - Flaticon](https://www.flaticon.com/kr/free-icons/)
+- [Github 아이콘 제작자: Freepik - Flaticon](https://www.flaticon.com/kr/free-icons/github)
+- [블로그 아이콘 제작자: Freepik - Flaticon](https://www.flaticon.com/kr/free-icons/)
+- [인스 타 그램 아이콘 제작자: Freepik - Flaticon](https://www.flaticon.com/kr/free-icons/-)
