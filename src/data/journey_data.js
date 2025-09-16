@@ -37,8 +37,8 @@ export const journeyData = {
   photos: [
     { src: '/assets/image/koren1.jpg', alt: 'Journey Photo 1' },
     { src: '/assets/image/koren2.jpg', alt: 'Journey Photo 2' },
-    { src: '/assets/image/koren3.jpg', alt: 'Journey Photo 3' },
-    { src: '/assets/image/taiwan1.jpg', alt: 'Journey Photo 4' },
+    { src: '/assets/image/taiwan1.jpg', alt: 'Journey Photo 3' },
+    { src: '/assets/image/taiwan2.jpg', alt: 'Journey Photo 4' },
   ],
 
   // "My Next Goals" 섹션 데이터
