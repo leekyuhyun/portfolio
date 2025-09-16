@@ -44,11 +44,11 @@ Vue.js와 Vite를 기반으로 제작한 반응형 개인 포트폴리오 웹사
 
 This project uses icons from Flaticon.
 
-- [정체 아이콘 제작자: Freepik - Flaticon](https://www.flaticon.com/kr/free-icons/)
-- [생일 케이크 아이콘 제작자: Stasy - Flaticon](https://www.flaticon.com/kr/free-icons/-)
-- [Ui 아이콘 제작자: Element Warehouse - Flaticon](https://www.flaticon.com/kr/free-icons/ui)
-- [이메일 아이콘 제작자: Those Icons - Flaticon](https://www.flaticon.com/kr/free-icons/)
-- [학교 아이콘 제작자: Freepik - Flaticon](https://www.flaticon.com/kr/free-icons/)
-- [Github 아이콘 제작자: Freepik - Flaticon](https://www.flaticon.com/kr/free-icons/github)
-- [블로그 아이콘 제작자: Freepik - Flaticon](https://www.flaticon.com/kr/free-icons/)
-- [인스 타 그램 아이콘 제작자: Freepik - Flaticon](https://www.flaticon.com/kr/free-icons/-)
+- [정체 아이콘 제작자: Freepik - Flaticon]
+- [생일 케이크 아이콘 제작자: Stasy - Flaticon]
+- [Ui 아이콘 제작자: Element Warehouse - Flaticon]
+- [이메일 아이콘 제작자: Those Icons - Flaticon]
+- [학교 아이콘 제작자: Freepik - Flaticon]
+- [Github 아이콘 제작자: Freepik - Flaticon]
+- [블로그 아이콘 제작자: Freepik - Flaticon]
+- [인스타그램 아이콘 제작자: Freepik - Flaticon]
