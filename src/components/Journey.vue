@@ -32,16 +32,16 @@
         <div class="col-lg-4 col-md-8 my-5 my-lg-0">
           <div class="photo-collage">
             <div class="photo-frame photo-1" data-aos="fade-up" data-aos-delay="200">
-              <div class="photo-placeholder"></div>
+              <img src="/assets/image/koren1.jpg" alt="Journey Photo 1" />
             </div>
             <div class="photo-frame photo-2" data-aos="fade-up" data-aos-delay="300">
-              <div class="photo-placeholder"></div>
+              <img src="/assets/image/koren2.jpg" alt="Journey Photo 2" />
             </div>
             <div class="photo-frame photo-3" data-aos="fade-up" data-aos-delay="400">
-              <div class="photo-placeholder"></div>
+              <img src="/assets/image/koren3.jpg" alt="Journey Photo 3" />
             </div>
             <div class="photo-frame photo-4" data-aos="fade-up" data-aos-delay="500">
-              <div class="photo-placeholder"></div>
+              <img src="/assets/image/taiwan1.jpg" alt="Journey Photo 4" />
             </div>
           </div>
         </div>
@@ -140,14 +140,7 @@
   object-fit: cover;
 }
 
-/* 나중에 이미지를 넣으면 이 placeholder는 지워주세요 */
-.photo-placeholder {
-  width: 100%;
-  height: 100%;
-  background-color: #e0e0e0;
-}
-
-/* 각 사진의 위치와 각도 (데스크톱) */
+/* ▼▼▼ 각 사진의 위치와 각도 수정 (데스크톱) ▼▼▼ */
 .photo-1 {
   width: 150px;
   height: 180px;
@@ -184,7 +177,7 @@
   z-index: 4;
 }
 
-/* ▼▼▼ 모바일 반응형 스타일 추가 ▼▼▼ */
+/* 모바일 반응형 스타일 추가 */
 @media (max-width: 991px) {
   .photo-collage {
     height: 300px; /* 모바일에서 높이 살짝 줄임 */
@@ -192,20 +185,20 @@
 
   /* 모바일에서 사진 크기와 위치 재조정 */
   .photo-1 {
-    width: 140px;
-    height: 170px;
+    width: 130px;
+    height: 150px;
   }
   .photo-2 {
     width: 140px;
     height: 170px;
   }
   .photo-3 {
-    width: 140px;
-    height: 170px;
+    width: 130px;
+    height: 160px;
   }
   .photo-4 {
-    width: 140px;
-    height: 170px;
+    width: 120px;
+    height: 140px;
   }
 }
 </style>
