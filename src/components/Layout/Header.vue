@@ -1,16 +1,16 @@
 <template>
-  <header class="header" :class="{ scrolled: isScrolled, 'menu-open': isMenuOpen }">
+  <header class="header" :class="{ scrolled: isScrolled, 'menu-open': uiStore.isMenuOpen }">
     <div class="container header-inner">
       <a href="#" class="logo">kyulee's Portfolio</a>
-      <nav class="nav" :class="{ active: isMenuOpen }">
-        <ul @click="closeMenu">
+      <nav class="nav" :class="{ active: uiStore.isMenuOpen }">
+        <ul @click="uiStore.closeMenu">
           <li><a href="#about">&lt;About Me /&gt;</a></li>
           <li><a href="#skills">&lt;Skills /&gt;</a></li>
           <li><a href="#projects">&lt;Projects /&gt;</a></li>
           <li><a href="#journey">&lt;Journey /&gt;</a></li>
         </ul>
       </nav>
-      <button class="hamburger" @click="toggleMenu" :class="{ active: isMenuOpen }">
+      <button class="hamburger" @click="uiStore.toggleMenu" :class="{ active: uiStore.isMenuOpen }">
         <span></span>
         <span></span>
         <span></span>
@@ -21,25 +21,18 @@
 
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
+// Pinia 스토어를 가져옵니다.
+import { useUiStore } from '@/stores/ui.js'
+
+// 스토어를 컴포넌트 안에서 사용할 수 있도록 초기화합니다.
+const uiStore = useUiStore()
 
 const isScrolled = ref(false)
-const isMenuOpen = ref(false)
 
 const handleScroll = () => {
   isScrolled.value = window.scrollY > 0
-  if (isMenuOpen.value) {
-    isMenuOpen.value = false
-  }
-}
-
-const toggleMenu = () => {
-  isMenuOpen.value = !isMenuOpen.value
-}
-
-const closeMenu = event => {
-  if (event.target.tagName === 'A') {
-    isMenuOpen.value = false
-  }
+  // 스크롤 시 메뉴를 닫는 로직도 스토어의 함수를 호출합니다.
+  uiStore.closeMenu()
 }
 
 onMounted(() => {
@@ -201,7 +194,7 @@ onUnmounted(() => {
     width: 100%;
     padding: 1.5rem 2rem;
     text-align: center;
-    color: var(--text-color); /* 검은색 변수 적용 */
+    color: var(--text-color);
     font-size: 1.6rem;
     font-weight: 500;
   }

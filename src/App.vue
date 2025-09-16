@@ -7,5 +7,5 @@
 
 <script setup>
 import HomeView from './views/HomeView.vue'
-import ScrollToTopButton from '@/components/ScrollToTopButton.vue'
+import ScrollToTopButton from '@/components/Layout/ScrollToTopButton.vue'
 </script>

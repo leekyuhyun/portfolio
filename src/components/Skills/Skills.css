@@ -1,0 +1,85 @@
+#skills {
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+.skills-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 4rem;
+  max-width: 950px;
+  margin: 0 auto;
+  border: 1px solid #f0f0f0;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 3rem 2rem;
+  align-items: center;
+}
+.category-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+}
+.category-icon {
+  width: 3rem;
+  height: 3rem;
+  margin-right: 1.5rem;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.category-icon.language {
+  background-image: url('/assets/image/language-icon.png');
+}
+.category-icon.frontend {
+  background-image: url('/assets/image/frontend-icon.png');
+}
+.category-icon.backend {
+  background-image: url('/assets/image/backend-icon.png');
+}
+.category-icon.database {
+  background-image: url('/assets/image/database-icon.png');
+}
+.category-icon.devops-version-control {
+  background-image: url('/assets/image/devops-icon.png');
+}
+.category-icon.design-collaboration {
+  background-image: url('/assets/image/design-icon.png');
+}
+.category-icon.ai-productivity {
+  background-image: url('/assets/image/ai-icon.png');
+}
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.skill-badge {
+  padding: 0.6rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1.4rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  transition:
+    transform 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+.skill-badge:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 768px) {
+  .skills-card {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding: 3rem;
+  }
+  .category-title {
+    font-size: 2rem;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 1rem;
+    justify-content: center;
+  }
+  .skills-tags {
+    justify-content: center;
+  }
+}
