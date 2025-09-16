@@ -6,8 +6,8 @@
         끊임없이 배우고 성장하며, 더 나은 사용자 경험을 만들기 위해 나아가는 저의 여정입니다.
       </p>
 
-      <div class="row align-items-center justify-content-center g-5">
-        <div class="col-lg-4">
+      <div class="row align-items-center justify-content-center gy-5">
+        <div class="col-lg-4 col-md-12">
           <div class="journey-card h-100 shadow-sm">
             <h3 class="card-title">What I'm Learning</h3>
             <ul class="list-unstyled">
@@ -29,7 +29,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4 col-md-8 my-5 my-lg-0">
+        <div class="col-lg-4 col-md-12 my-5 my-lg-0">
           <div class="photo-collage">
             <div class="photo-frame photo-1" data-aos="fade-up" data-aos-delay="200">
               <img src="/assets/image/koren1.jpg" alt="Journey Photo 1" />
@@ -46,7 +46,7 @@
           </div>
         </div>
 
-        <div class="col-lg-4">
+        <div class="col-lg-4 col-md-12">
           <div class="journey-card h-100 shadow-sm">
             <h3 class="card-title">My Next Goals</h3>
             <ul class="list-unstyled">
@@ -114,22 +114,22 @@
 /* --- 사진 콜라주 스타일 --- */
 .photo-collage {
   position: relative;
-  height: 350px;
-  max-width: 400px; /* 최대 너비 지정 */
-  margin: 0 auto; /* 가운데 정렬 */
+  height: 450px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .photo-frame {
   position: absolute;
   background-color: white;
   border: 10px solid white;
-  border-bottom-width: 25px; /* 폴라로이드 아래쪽 여백 */
+  border-bottom-width: 25px;
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease-in-out;
 }
 
 .photo-frame:hover {
-  transform: scale(1.05) rotate(0deg) !important; /* 호버 시 정면으로 확대 */
+  transform: scale(1.05) rotate(0deg) !important;
   z-index: 10;
 }
 
@@ -140,10 +140,10 @@
   object-fit: cover;
 }
 
-/* ▼▼▼ 각 사진의 위치와 각도 수정 (데스크톱) ▼▼▼ */
+/* 데스크톱 사진 크기 */
 .photo-1 {
-  width: 150px;
-  height: 180px;
+  width: 200px;
+  height: 250px;
   top: 10%;
   left: 5%;
   transform: rotate(-12deg);
@@ -151,8 +151,8 @@
 }
 
 .photo-2 {
-  width: 160px;
-  height: 200px;
+  width: 210px;
+  height: 265px;
   top: 0;
   left: 50%;
   transform: translateX(-50%) rotate(5deg);
@@ -160,8 +160,8 @@
 }
 
 .photo-3 {
-  width: 150px;
-  height: 190px;
+  width: 200px;
+  height: 255px;
   top: 40%;
   left: 15%;
   transform: rotate(8deg);
@@ -169,36 +169,35 @@
 }
 
 .photo-4 {
-  width: 140px;
-  height: 170px;
+  width: 190px;
+  height: 240px;
   top: 35%;
   left: 55%;
   transform: rotate(-5deg);
   z-index: 4;
 }
 
-/* 모바일 반응형 스타일 추가 */
+/* 모바일 반응형 스타일 (이전과 동일) */
 @media (max-width: 991px) {
   .photo-collage {
-    height: 300px; /* 모바일에서 높이 살짝 줄임 */
+    height: 350px;
   }
 
-  /* 모바일에서 사진 크기와 위치 재조정 */
   .photo-1 {
-    width: 130px;
-    height: 150px;
+    width: 150px;
+    height: 180px;
   }
   .photo-2 {
-    width: 140px;
-    height: 170px;
+    width: 160px;
+    height: 200px;
   }
   .photo-3 {
-    width: 130px;
-    height: 160px;
+    width: 150px;
+    height: 190px;
   }
   .photo-4 {
-    width: 120px;
-    height: 140px;
+    width: 140px;
+    height: 170px;
   }
 }
 </style>
