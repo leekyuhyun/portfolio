@@ -1,6 +1,6 @@
 <template>
   <section id="projects" class="section">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <h2 class="section-title text-center">&lt;PROJECTS /&gt;</h2>
 
       <h3 class="project-type-title text-center mt-5 mb-4">TEAM PROJECTS</h3>
@@ -178,7 +178,10 @@ const openModal = project => {
 </script>
 
 <style scoped>
-/* 기존 스타일은 그대로 유지합니다. */
+#projects {
+  background: linear-gradient(to top, #f3e7e9 0%, #e3eeff 100%);
+}
+
 .project-type-title {
   font-size: 2.2rem;
   color: var(--bs-primary);

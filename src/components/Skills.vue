@@ -1,6 +1,6 @@
 <template>
   <section id="skills" class="section">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <h2 class="section-title text-center">&lt;Skills /&gt;</h2>
 
       <div class="skills-card shadow-sm">
@@ -38,6 +38,10 @@ const skillCategories = ref(skillsData)
 </script>
 
 <style scoped>
+#skills {
+  background: linear-gradient(135deg, #e0c3fc 0%, #8ec5fc 100%);
+}
+
 .skills-card {
   background-color: white;
   border-radius: 15px;

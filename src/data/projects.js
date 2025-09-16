@@ -27,7 +27,7 @@ export const projectsData = [
     period: '2025.07.08 - (진행 중)',
     description:
       'K-디지털 챌린지 공모전 출품작으로, 범죄 취약 계층의 안전을 확보하고 골든타임을 사수하기 위해 개발된 **AI 기반 통합 관제 시스템**입니다. 스마트 장치로부터 수집된 데이터를 AI가 실시간으로 분석하여 위험 상황을 감지하고, 관계 기관에 신속하게 전파하여 초동 대응을 지원합니다.',
-    tags: ['Vue.js', 'Vue Router', 'Axios', 'Bootstrap', 'WebSocket', 'Kakao Maps API'],
+    tags: ['Vue.js', 'Vue Router', 'Axios', 'Bootstrap', 'Kakao Maps API'],
     githubUrl: 'https://github.com/leekyuhyun/contest_frontend',
     readmeUrl: 'https://raw.githubusercontent.com/leekyuhyun/contest_frontend/main/README.md',
   },

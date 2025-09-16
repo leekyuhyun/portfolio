@@ -3,8 +3,6 @@ export const skillsData = [
   {
     name: 'Language',
     skills: [
-      { name: 'HTML', color: '#E34F26' },
-      { name: 'CSS', color: '#1572B6' },
       { name: 'JavaScript', color: '#F7DF1E', textColor: '#000' },
       { name: 'Java', color: '#F05032' },
       { name: 'Python', color: '#2496ED' },
@@ -14,15 +12,13 @@ export const skillsData = [
   {
     name: 'Frontend',
     skills: [
+      { name: 'HTML', color: '#E34F26' },
+      { name: 'CSS', color: '#1572B6' },
       { name: 'Vue.js', color: '#4FC08D' },
-      { name: 'Vue-Router', color: '#4FC08D' },
       { name: 'React', color: '#61DAFB' },
-      { name: 'JSP', color: '#F05032' },
       { name: 'Vite', color: '#4FC08D' },
       { name: 'Axios', color: '#181717' },
       { name: 'Bootstrap', color: '#AE21C4' },
-      { name: 'ESLint', color: '#4B32C3' },
-      { name: 'Prettier', color: '#F7B93E', textColor: '#000' },
     ],
   },
 
@@ -31,17 +27,13 @@ export const skillsData = [
     skills: [
       { name: 'FastAPI', color: '#4FC08D' },
       { name: 'Flask', color: '#2496ED' },
-      { name: 'Servlet', color: '#B60000' },
     ],
   },
 
   {
     name: 'Database',
     icon: '@/assets/image/database-icon.png',
-    skills: [
-      { name: 'MySQL', color: '#2496ED' },
-      { name: 'JDBC', color: '#2496ED' },
-    ],
+    skills: [{ name: 'MySQL', color: '#2496ED' }],
   },
 
   {
@@ -59,7 +51,6 @@ export const skillsData = [
       { name: 'Git', color: '#F05032' },
       { name: 'GitHub', color: '#181717' },
       { name: 'Vercel', color: '#181717' },
-      { name: 'Docker', color: '#2496ED' },
     ],
   },
 

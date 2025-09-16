@@ -9,21 +9,21 @@ export const aboutMeData = {
     education: '안양대학교 (주: 소프트웨어학과 / 소단위: 지식재산융합)',
   },
   links: [
-    {
+    /* {
       name: 'Instagram',
       url: 'https://www.instagram.com/leeeeeee_kyu_h',
       icon: '/assets/image/instagram-icon.png',
-    },
+    }, */
     {
       name: 'GitHub',
       url: 'https://github.com/leekyuhyun',
       icon: '/assets/image/git-icon.png',
     },
-    {
+    /*  {
       name: 'Velog',
       url: 'https://velog.io/@leekh010502',
       icon: '/assets/image/vlog-icon.png',
-    },
+    }, */
   ],
   activity: {
     title: '주요 활동', // 활동들의 통합 제목

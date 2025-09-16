@@ -7,7 +7,7 @@
           <li><a href="#about">&lt;About Me /&gt;</a></li>
           <li><a href="#skills">&lt;Skills /&gt;</a></li>
           <li><a href="#projects">&lt;Projects /&gt;</a></li>
-          <li><a href="#contact">&lt;Contact /&gt;</a></li>
+          <li><a href="#journey">&lt;Journey /&gt;</a></li>
         </ul>
       </nav>
       <button class="hamburger" @click="toggleMenu" :class="{ active: isMenuOpen }">
@@ -52,7 +52,7 @@ onUnmounted(() => {
 </script>
 
 <style scoped>
-/* --- 기본 스타일 --- */
+/* --- 기존 스타일은 그대로 유지합니다. --- */
 .header {
   position: fixed;
   top: 0;
@@ -196,7 +196,6 @@ onUnmounted(() => {
     width: 100%;
   }
 
-  /* ▼ 드롭다운 메뉴 링크 글씨를 검은색으로 수정 (스타일 우선순위 문제 해결) ▼ */
   .header .nav a {
     display: block;
     width: 100%;

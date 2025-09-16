@@ -1,6 +1,6 @@
 <template>
   <section id="about" class="section">
-    <div class="container">
+    <div class="container" data-aos="fade-up">
       <h2 class="section-title text-center">&lt;ABOUT ME /&gt;</h2>
 
       <div class="about-card shadow-sm">
