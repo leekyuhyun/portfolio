@@ -1,19 +1,4 @@
 export const projectsData = [
-  // --- 팀 프로젝트 ---
-  {
-    type: 'Team',
-    // ▼▼▼ [수정] 첫 번째 프로젝트의 name(주제)을 원래 내용으로 복원 ▼▼▼
-    name: '국내 10개 이상의 주요 뉴스를 읽어와서 NoSQL DB로 저장하고 키워드, 날짜 별 기사 내용을 보여주는 앱',
-    context: '안양대학교 서버프로그래밍',
-    team: '5인',
-    // ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲
-    period: '2023.09 - 2023.12',
-    description:
-      '팀원들과 함께 개발한 첫 번째 프로젝트입니다. 주요 기능은 뉴스 기사 수집, 키워드 분석 및 날짜별 필터링 기능입니다.', // Description을 조금 더 명확하게 수정
-    tags: ['HTML', 'CSS', 'JavaScript', 'Python'],
-    githubUrl: 'https://github.com/your-team/repo1',
-    readmePath: 'static/Project_1_README.md',
-  },
   {
     type: 'Team',
     name: 'AI 기반 가상피팅 및 커뮤니티 서비스',
