@@ -1,4 +1,4 @@
-# [포트폴리오](https://portfolio-peach-six-81.vercel.app)
+# [포트폴리오 바로가기](https://portfolio-peach-six-81.vercel.app)
 
 # 개인 포트폴리오 웹사이트
 
