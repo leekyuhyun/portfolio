@@ -16,6 +16,8 @@ body {
   font-size: 1.6rem;
   line-height: 1.6;
   background-color: #f8f9fa;
+  word-break: keep-all; /* 한글 단어 잘림 방지 */
+  overflow-wrap: break-word; /* 긴 영문/URL 강제 줄바꿈 */
 }
 .section {
   padding: 8rem 1rem;
