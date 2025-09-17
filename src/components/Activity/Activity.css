@@ -1,0 +1,67 @@
+#activity {
+  padding-top: 8rem;
+  background: linear-gradient(180deg, #ffffff 0%, #e9f1f8 50%, #e3eeff 100%);
+}
+.activity-wrapper {
+  max-width: 114rem;
+  margin: 0 auto;
+}
+.activity-wrapper .card {
+  border-radius: 1.5rem;
+  padding: 4rem 10rem 4rem 6rem;
+}
+.icon {
+  width: 3rem;
+  height: 3rem;
+}
+.activity-list {
+  line-height: 1.8;
+}
+.activity-item:not(:last-child) {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+.activity-period {
+  color: var(--bs-primary);
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+.activity-title {
+  font-size: 1.9rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.activity-details {
+  padding-left: 1.5rem;
+}
+.activity-details p {
+  margin-bottom: 0.5rem;
+  font-size: 1.6rem;
+  color: #555;
+  word-break: keep-all;
+  overflow-wrap: break-word;
+}
+.activity-details .details-text {
+  font-size: 1.5rem;
+  color: #666;
+}
+.activity-details p strong {
+  font-weight: 600;
+  color: #333;
+}
+@media (max-width: 992px) {
+  .activity-wrapper .card {
+    padding: 4rem;
+  }
+}
+@media (max-width: 768px) {
+  .activity-wrapper .card {
+    padding: 3rem;
+  }
+  .activity-wrapper .card h3 {
+    font-size: 2.2rem !important;
+    justify-content: center;
+    margin-bottom: 3rem !important;
+  }
+}

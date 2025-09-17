@@ -4,6 +4,7 @@
     <main>
       <Introduction />
       <AboutMe />
+      <Activity />
       <Skills />
       <Projects />
       <Journey />
@@ -18,6 +19,7 @@ import AOS from 'aos'
 import Header from '@/components/Layout/Header.vue'
 import Introduction from '@/components/Introduction/Introduction.vue'
 import AboutMe from '@/components/AboutMe/AboutMe.vue'
+import Activity from '@/components/Activity/Activity.vue'
 import Skills from '@/components/Skills/Skills.vue'
 import Projects from '@/components/Projects/Projects.vue'
 import Journey from '@/components/Journey/Journey.vue'

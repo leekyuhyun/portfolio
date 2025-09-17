@@ -1,14 +1,25 @@
 <template>
   <section id="projects" class="section">
-    <div class="container" data-aos="fade-up">
-      <h2 class="section-title text-center">&lt;PROJECTS /&gt;</h2>
+    <div class="container">
+      <h2 class="section-title text-center" data-aos="fade-up">&lt;PROJECTS /&gt;</h2>
 
-      <h3 class="project-type-title text-center mt-5 mb-4">TEAM PROJECTS</h3>
+      <h3 class="project-type-title text-center mt-5 mb-4" data-aos="fade-up" data-aos-delay="100">
+        TEAM PROJECTS
+      </h3>
       <div class="row row-cols-1 row-cols-md-2 g-4 mb-5">
-        <div class="col" v-for="project in teamProjects" :key="project.title">
+        <div
+          class="col"
+          v-for="(project, index) in teamProjects"
+          :key="project.name"
+          data-aos="fade-up"
+          :data-aos-delay="200 * (index % 2) + 200"
+        >
           <div class="card h-100 shadow-sm project-card">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">{{ project.title }}</h5>
+              <div class="project-title-wrapper">
+                <h5 class="card-title fw-bold">{{ project.name }}</h5>
+                <p class="project-context text-muted">{{ project.context }} ({{ project.team }})</p>
+              </div>
               <p class="card-text text-muted">{{ project.period }}</p>
               <p class="card-text">{{ project.description }}</p>
               <div class="d-flex flex-wrap gap-2 mt-auto pt-3">
@@ -49,12 +60,23 @@
         </div>
       </div>
 
-      <h3 class="project-type-title text-center mt-5 mb-4">PERSONAL PROJECTS</h3>
+      <h3 class="project-type-title text-center mt-5 mb-4" data-aos="fade-up" data-aos-delay="100">
+        PERSONAL PROJECTS
+      </h3>
       <div class="row row-cols-1 row-cols-md-2 g-4">
-        <div class="col" v-for="project in personalProjects" :key="project.title">
+        <div
+          class="col"
+          v-for="(project, index) in personalProjects"
+          :key="project.name"
+          data-aos="fade-up"
+          :data-aos-delay="200 * (index % 2) + 200"
+        >
           <div class="card h-100 shadow-sm project-card">
             <div class="card-body d-flex flex-column">
-              <h5 class="card-title fw-bold">{{ project.title }}</h5>
+              <div class="project-title-wrapper">
+                <h5 class="card-title fw-bold">{{ project.name }}</h5>
+                <p class="project-context text-muted">{{ project.context }}</p>
+              </div>
               <p class="card-text text-muted">{{ project.period }}</p>
               <p class="card-text">{{ project.description }}</p>
               <div class="d-flex flex-wrap gap-2 mt-auto pt-3">
@@ -100,7 +122,7 @@
       <div class="modal-dialog modal-xl modal-dialog-scrollable">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">{{ selectedProject?.title }} - README</h5>
+            <h5 class="modal-title">{{ selectedProject?.name }} - README</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
           </div>
           <div class="modal-body">

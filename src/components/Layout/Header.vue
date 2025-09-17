@@ -5,6 +5,7 @@
       <nav class="nav" :class="{ active: uiStore.isMenuOpen }">
         <ul @click="uiStore.closeMenu">
           <li><a href="#about">&lt;About Me /&gt;</a></li>
+          <li><a href="#activity">&lt;Activity /&gt;</a></li>
           <li><a href="#skills">&lt;Skills /&gt;</a></li>
           <li><a href="#projects">&lt;Projects /&gt;</a></li>
           <li><a href="#journey">&lt;Journey /&gt;</a></li>

@@ -2,8 +2,7 @@
   <section id="skills" class="section">
     <div class="container" data-aos="fade-up">
       <h2 class="section-title text-center">&lt;Skills /&gt;</h2>
-
-      <div class="skills-card shadow-sm">
+      <div class="skills-card shadow-sm" data-aos-delay="100">
         <template v-for="category in skillCategories" :key="category.name">
           <div class="category-title">
             <div

@@ -1,75 +1,72 @@
 :root {
-  /* 부트스트랩의 기본 색상을 활용하거나 커스텀 색상 유지 */
   --bs-primary: #0d6efd;
   --bs-secondary: #6c757d;
   --text-color: #212529;
   --text-light-color: #f8f9fa;
-
   --header-height: 6rem;
-
   --font-main: 'Noto Sans KR', sans-serif;
 }
-
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
   scroll-padding-top: var(--header-height);
 }
-
 body {
   font-family: var(--font-main);
   font-size: 1.6rem;
   line-height: 1.6;
-  background-color: #f8f9fa; /* 전체 페이지 기본 배경 */
+  background-color: #f8f9fa;
 }
-
 .section {
-  /* 부트스트랩의 spacing 유틸리티(p-5 등)를 사용할 것이므로 padding 최소화 */
-  padding: 8rem 1rem; /* 좌우 패딩 추가 */
+  padding: 8rem 1rem;
+  position: relative;
 }
-
+.section:not(#about)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 114rem;
+  max-width: 95%;
+  height: 2px;
+  background-image: repeating-linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.2) 0,
+    rgba(0, 0, 0, 0.2) 20px,
+    transparent 20px,
+    transparent 35px
+  );
+}
 .section-title {
   font-size: 3.6rem;
   font-weight: 700;
   margin-bottom: 5rem;
 }
-
-/* --- 반응형 웹을 위한 미디어 쿼리 --- */
-
-/* ▼▼▼ [수정] 데스크탑 (992px 이상) 에서 전체적인 폰트 크기 증가 ▼▼▼ */
 @media (min-width: 992px) {
   html {
-    font-size: 70%; /* 기본 62.5% (1rem = 10px) -> 70% (~11.2px) 로 조정 */
+    font-size: 70%;
   }
 }
-/* ▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲▲ */
-
-/* 태블릿 (768px 이하) */
 @media (max-width: 768px) {
   html {
-    font-size: 55%; /* 기본 폰트 크기 살짝 줄이기 */
+    font-size: 55%;
   }
-
   .section {
     padding: 6rem 2rem;
   }
-
   .section-title {
     font-size: 3rem;
     margin-bottom: 4rem;
   }
 }
-
-/* 모바일 (576px 이하) */
 @media (max-width: 576px) {
   html {
-    font-size: 50%; /* 모바일에서 기본 폰트 크기 더 줄이기 */
+    font-size: 50%;
   }
-
   .section {
     padding: 5rem 1.5rem;
   }
-
   .section-title {
     font-size: 2.8rem;
     margin-bottom: 3rem;
