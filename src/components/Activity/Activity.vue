@@ -50,6 +50,31 @@
           </div>
         </div>
       </div>
+
+      <div class="row g-4 activity-card-wrapper mt-4">
+        <div class="col-lg-12" data-aos="fade-up" data-aos-delay="200">
+          <div class="card p-4 shadow-sm h-100">
+            <h3 class="fs-4 mb-4 text-primary fw-bold">{{ activityData.ipAchievements.title }}</h3>
+            <ul class="activity-list list-unstyled mb-0">
+              <li
+                v-for="(item, index) in activityData.ipAchievements.items"
+                :key="'ip-achievements-' + index"
+                class="activity-item"
+              >
+                <p class="activity-period fw-bold">{{ item.period }}</p>
+                <p class="activity-title">{{ item.title }}</p>
+                <div class="activity-details">
+                  <p v-if="item.topic"><strong>주제:</strong> {{ item.topic }}</p>
+                  <p v-if="item.role"><strong>역할:</strong> {{ item.role }}</p>
+                  <p v-if="item.details" class="details-text">
+                    <strong>주요 내용:</strong> {{ item.details }}
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 </template>
