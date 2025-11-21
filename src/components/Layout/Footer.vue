@@ -16,10 +16,7 @@
           <summary>Icon Attributions</summary>
           <ul class="list-unstyled mt-2">
             <li>
-              <a
-                href="https://www.flaticon.com/kr/free-icons/"
-                title="정체 아이콘"
-                target="_blank"
+              <a href="https://www.flaticon.com/kr/free-icons/" title="정체 아이콘" target="_blank"
                 >정체 아이콘 제작자: Freepik - Flaticon</a
               >
             </li>
@@ -45,10 +42,7 @@
               >
             </li>
             <li>
-              <a
-                href="https://www.flaticon.com/kr/free-icons/"
-                title="학교 아이콘"
-                target="_blank"
+              <a href="https://www.flaticon.com/kr/free-icons/" title="학교 아이콘" target="_blank"
                 >학교 아이콘 제작자: Freepik - Flaticon</a
               >
             </li>
@@ -76,10 +70,15 @@
                 >인스 타 그램 아이콘 제작자: Freepik - Flaticon</a
               >
             </li>
+            <li>
+              <a href="https://www.flaticon.com/free-icon/-" title="트로피 아이콘" target="_blank"
+                >트로피 아이콘 제작자: Freepik - Flaticon</a
+              >
+            </li>
           </ul>
         </details>
       </div>
-      </div>
+    </div>
   </footer>
 </template>
 

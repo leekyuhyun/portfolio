@@ -41,9 +41,9 @@ export const journeyData = {
     { src: '/assets/image/taiwan2.jpg', alt: 'Journey Photo 4' },
   ],
 
-  // "My Next Goals" 섹션 데이터
+  // "Next Goals" 섹션 데이터
   goals: {
-    title: 'My Next Goals',
+    title: 'Next Goals',
     items: [
       {
         subject: 'Next.js',
@@ -69,6 +69,11 @@ export const journeyData = {
         subject: 'Docker 컨테이너',
         description:
           '개발 환경의 일관성을 유지하고 배포 효율성을 높이기 위해 Docker 학습을 목표로 하고 있습니다. 애플리케이션을 컨테이너화하여 안정적으로 실행하는 경험을 통해 DevOps에 대한 이해를 넓히고 싶습니다.',
+      },
+      {
+        subject: 'FullStack 개발',
+        description:
+          '프론트엔드뿐만 아니라 백엔드 개발 역량도 함께 키워, 전체 애플리케이션 아키텍처를 이해하고 설계할 수 있는 FullStack 개발자로 성장하는 것을 목표로 하고 있습니다.',
       },
     ],
   },

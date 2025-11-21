@@ -15,4 +15,10 @@ export const aboutMeData = {
       icon: '/assets/image/git-icon.png',
     },
   ],
+  trophies: [
+    {
+      name: 'Net 챌린지 캠프 시즌 12 한국정보통신기술협회장상',
+      icon: '/assets/image/trophy.png',
+    },
+  ],
 }

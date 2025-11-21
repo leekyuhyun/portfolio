@@ -2,66 +2,76 @@
   padding-top: 8rem;
   background: linear-gradient(180deg, #ffffff 0%, #e9f1f8 50%, #e3eeff 100%);
 }
-.activity-wrapper {
-  max-width: 114rem;
-  margin: 0 auto;
+
+.main-activity-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
 }
-.activity-wrapper .card {
-  border-radius: 1.5rem;
-  padding: 4rem 10rem 4rem 6rem;
+
+/* 💡 새로운 카드 스타일 */
+.activity-card-wrapper .card {
+  border-radius: 1rem;
+  padding: 3rem;
+  border: 1px solid #e0e0e0;
 }
-.icon {
-  width: 3rem;
-  height: 3rem;
-}
+
 .activity-list {
   line-height: 1.8;
+  padding-left: 0;
 }
+
+/* 각 활동 항목 사이에 구분선 추가 */
 .activity-item:not(:last-child) {
-  margin-bottom: 2.5rem;
-  padding-bottom: 2.5rem;
-  border-bottom: 1px solid #f0f0f0;
+  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px dashed #cccccc; /* 깔끔한 대시선 */
 }
+
+/* 마커 스타일은 제거되었으므로, 목록 항목에 일반적인 리스트 스타일만 적용 */
 .activity-period {
   color: var(--bs-primary);
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
+
 .activity-title {
   font-size: 1.9rem;
-  font-weight: 500;
-  margin-bottom: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
+
 .activity-details {
-  padding-left: 1.5rem;
+  padding-left: 1rem; /* 항목 내용 들여쓰기 */
 }
+
 .activity-details p {
-  margin-bottom: 0.5rem;
-  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+  font-size: 1.5rem;
   color: #555;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 .activity-details .details-text {
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: #666;
 }
 .activity-details p strong {
-  font-weight: 600;
+  font-weight: 700;
   color: #333;
 }
+
+/* 💡 모바일 반응형: 별도 복잡한 조정 필요 없음 (Bootstrap의 col-lg-6이 자동 처리) */
 @media (max-width: 992px) {
-  .activity-wrapper .card {
-    padding: 4rem;
+  .activity-card-wrapper .card {
+    padding: 2.5rem;
   }
 }
-@media (max-width: 768px) {
-  .activity-wrapper .card {
-    padding: 3rem;
+@media (max-width: 576px) {
+  .activity-card-wrapper .card {
+    padding: 1.5rem;
   }
-  .activity-wrapper .card h3 {
-    font-size: 2.2rem !important;
-    justify-content: center;
-    margin-bottom: 3rem !important;
+  .activity-title {
+    font-size: 1.7rem;
   }
 }

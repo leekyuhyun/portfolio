@@ -24,16 +24,16 @@ export const skillsData = [
 
   {
     name: 'Backend',
-    skills: [
-      { name: 'FastAPI', color: '#4FC08D' },
-      { name: 'Flask', color: '#2496ED' },
-    ],
+    skills: [{ name: 'FastAPI', color: '#4FC08D' }],
   },
 
   {
     name: 'Database',
     icon: '@/assets/image/database-icon.png',
-    skills: [{ name: 'MySQL', color: '#2496ED' }],
+    skills: [
+      { name: 'MySQL', color: '#2496ED' },
+      { name: 'PostgreSQL', color: '#336791' },
+    ],
   },
 
   {

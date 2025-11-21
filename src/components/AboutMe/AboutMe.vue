@@ -29,6 +29,17 @@
                 <img src="/assets/image/school-icon.png" class="icon me-3" />
                 <span>{{ info.profile.education }}</span>
               </li>
+
+              <li class="mt-5"></li>
+              <li
+                class="d-flex align-items-center mb-3"
+                v-for="trophy in info.trophies"
+                :key="trophy.name"
+              >
+                <img :src="trophy.icon" class="icon me-3" alt="Trophy Icon" />
+                <span>{{ trophy.name }}</span>
+              </li>
+
               <li class="mt-5"></li>
               <li
                 class="d-flex align-items-center mb-3"

@@ -1,11 +1,14 @@
-import { ref } from 'vue'
-import { activityData } from '@/data/activity_data.js'
+import { onCampusData, offCampusData } from '@/data/activity_data.js'
 
 export default {
   setup() {
-    const activity = ref(activityData)
+    const activityData = {
+      onCampus: onCampusData,
+      offCampus: offCampusData,
+    }
+
     return {
-      activity,
+      activityData,
     }
   },
 }
