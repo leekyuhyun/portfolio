@@ -29,26 +29,24 @@
   flex-grow: 1;
 }
 
-/* 💡 스크롤바 숨김 (웹킷 기반 브라우저) */
-.activity-scroll-container::-webkit-scrollbar {
-  display: none;
-  width: 0;
-  height: 0;
-}
+/* 💡 새로운 수평 스크롤 컨테이너 */
 .activity-scroll-container {
-  -ms-overflow-style: none; /* IE and Edge */
-  scrollbar-width: none; /* Firefox */
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  /* [수정] flex-grow: 1 제거. 높이를 뷰포트 내에서만 유지하도록 함. */
+  height: 100%;
 }
 
 /* 💡 개별 활동 카드들을 담는 flex 컨테이너 */
 .activity-horizontal-list {
   display: flex;
   flex-wrap: nowrap;
-  gap: 1.2rem; /* 카드 간 간격 축소 */
+  gap: 1.2rem;
   padding: 0.5rem 0;
-  /* [핵심 설정] 모든 카드의 높이를 가장 긴 카드에 맞춤 */
   align-items: stretch;
-  height: 100%; /* 부모 높이 상속 */
+  /* [유지] height: 100%로 부모 높이를 상속받아 통일 */
+  height: 100%;
 }
 
 /* 💡 개별 활동 카드 스타일 */
