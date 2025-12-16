@@ -9,51 +9,120 @@
   object-fit: contain;
 }
 
-/* 💡 새로운 카드 스타일 */
-.activity-card-wrapper .card {
-  border-radius: 1rem;
-  padding: 3rem;
-  border: 1px solid #e0e0e0;
+/* 💡 섹션 타이틀 스타일 (교내/교외/특허 구분) */
+.activity-section-title {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: var(--bs-primary);
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--bs-primary);
+  display: inline-block;
 }
 
-.activity-list {
-  line-height: 1.8;
+/* 💡 새로운 수평 스크롤 컨테이너 */
+.activity-scroll-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  height: 100%;
+  flex-grow: 1;
+}
+
+/* 💡 스크롤바 숨김 (웹킷 기반 브라우저) */
+.activity-scroll-container::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.activity-scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+/* 💡 개별 활동 카드들을 담는 flex 컨테이너 */
+.activity-horizontal-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.2rem; /* 카드 간 간격 축소 */
+  padding: 0.5rem 0;
+  /* [핵심 설정] 모든 카드의 높이를 가장 긴 카드에 맞춤 */
+  align-items: stretch;
+  height: 100%; /* 부모 높이 상속 */
+}
+
+/* 💡 개별 활동 카드 스타일 */
+.activity-item-card {
+  flex: 0 0 auto; /* 크기 조절 방지 */
+  transition: transform 0.3s ease;
+  height: 100%; /* 부모 높이에 맞춤 */
+}
+
+.activity-item-card .card {
+  border-radius: 1rem;
+  padding: 2.5rem;
+  border: 1px solid #e0e0e0;
+  /* 텍스트 상단 정렬 및 높이 맞추기 */
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* 부모 activity-item-card의 높이에 맞춤 */
+}
+
+.activity-item-card .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* PC (992px 이상): 2.5개 노출 및 스크롤 유도 */
+@media (min-width: 992px) {
+  .activity-item-card {
+    /* [수정] 2.5개 카드가 보이도록 너비 조정 */
+    width: calc(40% - 1.2rem);
+    min-width: calc(40% - 1.2rem);
+  }
+}
+
+/* 모바일/태블릿 (992px 미만): 1개씩 보이게 */
+@media (max-width: 991.98px) {
+  .activity-item-card {
+    width: 85vw; /* 뷰포트 너비의 85% */
+    min-width: 85vw;
+  }
+  .activity-horizontal-list {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+/* --- 내부 텍스트 스타일 조정 --- */
+
+.activity-details {
+  /* [최종 수정] 내용이 적은 카드의 공간을 확장하여 높이 통일 보조 (가장 중요한 설정) */
+  flex-grow: 1;
   padding-left: 0;
 }
 
-/* 각 활동 항목 사이에 구분선 추가 */
-.activity-item:not(:last-child) {
-  margin-bottom: 2rem;
-  padding-bottom: 2rem;
-  border-bottom: 1px dashed #cccccc; /* 깔끔한 대시선 */
-}
-
-/* 마커 스타일은 제거되었으므로, 목록 항목에 일반적인 리스트 스타일만 적용 */
 .activity-period {
-  color: var(--bs-primary);
   font-size: 1.6rem;
   margin-bottom: 0.5rem;
 }
 
 .activity-title {
-  font-size: 1.9rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.activity-details {
-  padding-left: 1rem; /* 항목 내용 들여쓰기 */
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
 }
 
 .activity-details p {
   margin-bottom: 0.3rem;
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* [PC/기본] 모든 p 태그의 폰트 크기를 1.5rem으로 통일 */
   color: #555;
   word-break: keep-all;
   overflow-wrap: break-word;
 }
 .activity-details .details-text {
-  font-size: 1.4rem;
+  /* [수정] font-size 속성 제거하여 .activity-details p의 1.5rem을 상속받도록 함 */
+  line-height: 1.7;
   color: #666;
 }
 .activity-details p strong {
@@ -61,17 +130,26 @@
   color: #333;
 }
 
-/* 💡 모바일 반응형: 별도 복잡한 조정 필요 없음 (Bootstrap의 col-lg-6이 자동 처리) */
-@media (max-width: 992px) {
-  .activity-card-wrapper .card {
-    padding: 2.5rem;
+/* 기타 반응형 */
+@media (max-width: 768px) {
+  .activity-item-card .card {
+    padding: 2rem;
+  }
+  .activity-title {
+    font-size: 1.8rem;
+  }
+  .activity-details p {
+    font-size: 1.4rem; /* [수정] 768px 이하에서 모든 p 태그의 폰트 크기 통일 */
   }
 }
 @media (max-width: 576px) {
-  .activity-card-wrapper .card {
+  .activity-item-card .card {
     padding: 1.5rem;
   }
   .activity-title {
-    font-size: 1.7rem;
+    font-size: 1.6rem;
+  }
+  .activity-details p {
+    font-size: 1.3rem; /* [수정] 576px 이하에서 모든 p 태그의 폰트 크기 통일 */
   }
 }
