@@ -4,25 +4,77 @@
 .section-title {
   margin-bottom: 4rem;
 }
+
+/* 프로젝트 섹션 타이틀 */
 .project-type-title {
-  font-size: 2.8rem;
+  font-size: 2.4rem;
   font-weight: 700;
   color: var(--bs-primary);
-  margin-top: 6rem;
-  margin-bottom: 3.5rem;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 3px solid var(--bs-primary);
+  display: inline-block;
 }
-.project-type-title::before,
-.project-type-title::after {
-  content: '';
+
+/* 수평 스크롤 컨테이너 */
+.project-scroll-container {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 1rem;
+  height: 100%;
   flex-grow: 1;
-  height: 2px;
-  background-color: #d1e7dd;
-  margin: 0 2rem;
 }
+
+/* 스크롤바 숨김 */
+.project-scroll-container::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
+}
+.project-scroll-container {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* 💡 [핵심] 카드들을 담는 Flex 컨테이너 */
+.project-horizontal-list {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1.5rem;
+  padding: 0.5rem 0;
+  align-items: stretch; /* 높이 통일 */
+  height: 100%;
+}
+
+/* 💡 개별 프로젝트 카드 래퍼 */
+.project-item-card {
+  flex: 0 0 auto;
+  transition: transform 0.3s ease;
+  height: 100%; /* 부모 높이에 맞춰 늘어남 */
+}
+
+/* PC 너비 설정 */
+@media (min-width: 992px) {
+  .project-item-card {
+    width: calc(40% - 1.5rem);
+    min-width: calc(40% - 1.5rem);
+  }
+}
+/* 모바일 너비 설정 */
+@media (max-width: 991.98px) {
+  .project-item-card {
+    width: 85vw;
+    min-width: 85vw;
+  }
+  .project-horizontal-list {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+/* ------------------------------------------- */
+
+/* 💡 [핵심] .card 요소 */
 .project-card {
   border-radius: 15px;
   box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
@@ -30,15 +82,32 @@
     transform 0.3s ease-out,
     box-shadow 0.3s ease-out;
   overflow: hidden;
+  height: 100%; /* 부모에 맞춤 */
+  display: flex;
+  flex-direction: column;
 }
-.project-card:hover {
-  transform: translateY(-8px) scale(1.01);
+
+.project-card .card-body {
+  padding: 3rem;
+  /* 카드 바디가 늘어나야 footer가 아래로 밀리고 내용이 짧은 카드도 높이를 채움 */
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 💡 [핵심] 내용 확장 영역 */
+.project-description-content {
+  flex-grow: 1; /* 남은 공간을 채워 카드 높이를 맞춤 */
+  margin-bottom: 0;
+}
+
+/* 기타 스타일 */
+.project-item-card:hover {
+  transform: translateY(-8px);
   box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
-.project-card .card-body {
-  padding: 3rem;
-}
+
 .project-title-wrapper {
   margin-bottom: 1rem;
 }
@@ -64,4 +133,3 @@
   color: #888 !important;
   margin-bottom: 1.5rem;
 }
-/* ... (나머지 코드는 이전과 동일) ... */
