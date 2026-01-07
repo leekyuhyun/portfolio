@@ -8,6 +8,10 @@ export default {
   setup() {
     const { readmeContent, fetchReadme } = useReadme()
 
+    // 제목 데이터 정의
+    const teamProjectsTitle = ref('Team Projects')
+    const personalProjectsTitle = ref('Personal Projects')
+
     const teamProjects = computed(() => projectsData.filter(p => p.type === 'Team'))
     const personalProjects = computed(() => projectsData.filter(p => p.type === 'Personal'))
 
@@ -15,7 +19,10 @@ export default {
     let projectReadmeModal = null
 
     onMounted(() => {
-      projectReadmeModal = new Modal(document.getElementById('projectReadmeModal'))
+      const modalElement = document.getElementById('projectReadmeModal')
+      if (modalElement) {
+        projectReadmeModal = new Modal(modalElement)
+      }
     })
 
     const skillColorMap = computed(() => {
@@ -38,10 +45,14 @@ export default {
     const openModal = project => {
       selectedProject.value = project
       fetchReadme(project.readmeUrl)
-      projectReadmeModal.show()
+      if (projectReadmeModal) {
+        projectReadmeModal.show()
+      }
     }
 
     return {
+      teamProjectsTitle,
+      personalProjectsTitle,
       teamProjects,
       personalProjects,
       selectedProject,

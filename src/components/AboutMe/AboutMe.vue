@@ -2,6 +2,9 @@
   <section id="about" class="section">
     <div class="container">
       <h2 class="section-title text-center" data-aos="fade-up">&lt;ABOUT ME /&gt;</h2>
+      <h2 class="section-subtitle text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+        제 소개를 할께요!
+      </h2>
       <div class="about-card shadow-sm" data-aos="fade-up" data-aos-delay="100">
         <div class="row align-items-center justify-content-around gy-5">
           <div class="col-lg-4 text-center">

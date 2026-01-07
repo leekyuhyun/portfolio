@@ -1,153 +1,60 @@
 #activity {
-  padding-top: 8rem;
-  background: linear-gradient(180deg, #ffffff 0%, #e9f1f8 50%, #e3eeff 100%);
+  padding: 100px 0;
+  background-color: #f8f9fa !important; /* 전체 배경 회색 유지 */
 }
 
-.main-activity-icon {
-  width: 60px;
-  height: 60px;
-  object-fit: contain;
+.activity-group-title {
+  font-size: 2.2rem; /* 그룹 제목 더 크게 */
+  font-weight: 800;
+  border-left: 8px solid #0d6efd;
+  padding-left: 20px;
+  color: #212529;
 }
 
-/* 💡 섹션 타이틀 스타일 (교내/교외/특허 구분) */
-.activity-section-title {
-  font-size: 2.4rem;
-  font-weight: 700;
-  color: var(--bs-primary);
-  margin-bottom: 2rem;
-  padding-bottom: 0.5rem;
-  border-bottom: 3px solid var(--bs-primary);
-  display: inline-block;
+/* 개별 섹션 컬러 포인트 */
+.border-success { border-color: #198754 !important; }
+.border-warning { border-color: #ffc107 !important; }
+
+.activity-card {
+  border-radius: 16px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
 }
 
-/* 💡 새로운 수평 스크롤 컨테이너 */
-.activity-scroll-container {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 1rem;
-  height: 100%;
-  flex-grow: 1;
+.activity-card:hover {
+  transform: translateX(10px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1) !important;
 }
 
-/* 💡 새로운 수평 스크롤 컨테이너 */
-.activity-scroll-container {
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  padding-bottom: 1rem;
-  /* [수정] flex-grow: 1 제거. 높이를 뷰포트 내에서만 유지하도록 함. */
-  height: 100%;
+.card-header {
+  border-bottom: none !important;
+  transition: background-color 0.2s;
 }
 
-/* 💡 개별 활동 카드들을 담는 flex 컨테이너 */
-.activity-horizontal-list {
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 1.2rem;
-  padding: 0.5rem 0;
-  align-items: stretch;
-  /* [유지] height: 100%로 부모 높이를 상속받아 통일 */
-  height: 100%;
+/* 펼쳐졌을 때 헤더 배경색 살짝 변경 */
+.card-header:not(.collapsed) {
+  background-color: #ffffff !important;
 }
 
-/* 💡 개별 활동 카드 스타일 */
-.activity-item-card {
-  flex: 0 0 auto; /* 크기 조절 방지 */
+.toggle-icon {
   transition: transform 0.3s ease;
-  height: 100%; /* 부모 높이에 맞춤 */
+  color: #adb5bd;
 }
 
-.activity-item-card .card {
-  border-radius: 1rem;
-  padding: 2.5rem;
-  border: 1px solid #e0e0e0;
-  /* 텍스트 상단 정렬 및 높이 맞추기 */
-  display: flex;
-  flex-direction: column;
-  height: 100%; /* 부모 activity-item-card의 높이에 맞춤 */
+.card-header:not(.collapsed) .toggle-icon {
+  transform: rotate(180deg);
+  color: #0d6efd;
 }
 
-.activity-item-card .card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15) !important;
+.activity-detail-text {
+  line-height: 1.8;
 }
 
-/* PC (992px 이상): 2.5개 노출 및 스크롤 유도 */
-@media (min-width: 992px) {
-  .activity-item-card {
-    /* [수정] 2.5개 카드가 보이도록 너비 조정 */
-    width: calc(40% - 1.2rem);
-    min-width: calc(40% - 1.2rem);
-  }
+.activity-detail-text p {
+  margin-bottom: 0.8rem;
+  white-space: pre-wrap;
 }
 
-/* 모바일/태블릿 (992px 미만): 1개씩 보이게 */
-@media (max-width: 991.98px) {
-  .activity-item-card {
-    width: 85vw; /* 뷰포트 너비의 85% */
-    min-width: 85vw;
-  }
-  .activity-horizontal-list {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-}
-
-/* --- 내부 텍스트 스타일 조정 --- */
-
-.activity-details {
-  /* [최종 수정] 내용이 적은 카드의 공간을 확장하여 높이 통일 보조 (가장 중요한 설정) */
-  flex-grow: 1;
-  padding-left: 0;
-}
-
-.activity-period {
-  font-size: 1.6rem;
-  margin-bottom: 0.5rem;
-}
-
-.activity-title {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 1.5rem;
-}
-
-.activity-details p {
-  margin-bottom: 0.3rem;
-  font-size: 1.5rem; /* [PC/기본] 모든 p 태그의 폰트 크기를 1.5rem으로 통일 */
-  color: #555;
-  word-break: keep-all;
-  overflow-wrap: break-word;
-}
-.activity-details .details-text {
-  /* [수정] font-size 속성 제거하여 .activity-details p의 1.5rem을 상속받도록 함 */
-  line-height: 1.7;
-  color: #666;
-}
-.activity-details p strong {
-  font-weight: 700;
-  color: #333;
-}
-
-/* 기타 반응형 */
-@media (max-width: 768px) {
-  .activity-item-card .card {
-    padding: 2rem;
-  }
-  .activity-title {
-    font-size: 1.8rem;
-  }
-  .activity-details p {
-    font-size: 1.4rem; /* [수정] 768px 이하에서 모든 p 태그의 폰트 크기 통일 */
-  }
-}
-@media (max-width: 576px) {
-  .activity-item-card .card {
-    padding: 1.5rem;
-  }
-  .activity-title {
-    font-size: 1.6rem;
-  }
-  .activity-details p {
-    font-size: 1.3rem; /* [수정] 576px 이하에서 모든 p 태그의 폰트 크기 통일 */
-  }
+.badge {
+  letter-spacing: 0.5px;
 }

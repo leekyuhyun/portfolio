@@ -2,6 +2,9 @@
   <section id="skills" class="section">
     <div class="container" data-aos="fade-up">
       <h2 class="section-title text-center">&lt;Skills /&gt;</h2>
+      <h2 class="section-subtitle text-center mb-5" data-aos="fade-up" data-aos-delay="100">
+        제가 다룰 수 있는 기술들을 소개합니다!
+      </h2>
       <div class="skills-card shadow-sm" data-aos-delay="100">
         <template v-for="category in skillCategories" :key="category.name">
           <div class="category-title">
