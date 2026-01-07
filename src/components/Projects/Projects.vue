@@ -66,7 +66,7 @@
           </div>
         </div>
       </div>
-
+<!-----
       <div class="row g-4 project-section-container mt-5">
         <div class="col-lg-12 d-flex flex-column" data-aos="fade-up" data-aos-delay="200">
           <h3 class="project-type-title">{{ personalProjectsTitle }}</h3>
@@ -127,7 +127,7 @@
             </div>
           </div>
         </div>
-      </div>
+      </div> --->
       <div class="modal fade" id="projectReadmeModal" tabindex="-1">
         <div class="modal-dialog modal-xl modal-dialog-scrollable">
           <div class="modal-content">

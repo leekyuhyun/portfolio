@@ -24,7 +24,7 @@ export const projectsData = [
     githubUrl: 'https://github.com/leekyuhyun/contest_frontend',
     readmeUrl: 'https://raw.githubusercontent.com/leekyuhyun/contest_frontend/main/README.md',
   },
-  {
+  /*{
     type: 'Team',
     name: '금융 빅데이터 기반 신용카드 사기 거래 탐지 시스템',
     context: '안양대학교 빅데이터와 인공지능',
@@ -44,8 +44,8 @@ export const projectsData = [
     ],
     githubUrl: 'https://github.com/leekyuhyun/anomaly-dashboard-project',
     readmeUrl: 'https://github.com/leekyuhyun/anomaly-dashboard-project/blob/main/README.md',
-  },
-
+  },*/
+/*
   // --- 개인 프로젝트 ---
   {
     type: 'Personal',
@@ -91,5 +91,5 @@ export const projectsData = [
     tags: ['Vue.js', 'Vite', 'Bootstrap', 'JavaScript'],
     githubUrl: 'https://github.com/leekyuhyun/BaseballStatsRecord',
     readmeUrl: 'https://github.com/leekyuhyun/BaseballStatsRecord/blob/main/README.md',
-  },
+  }, */
 ]
