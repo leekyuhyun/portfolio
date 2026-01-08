@@ -1,0 +1,132 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  height: 70px; /* 기본 헤더 높이 */
+  transition:
+    background-color 0.4s ease,
+    box-shadow 0.4s ease;
+  background-color: transparent;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 2rem;
+  color: LightGray;
+  text-decoration: none;
+  transition: color 0.4s ease;
+  z-index: 1002;
+}
+
+.nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+}
+
+.nav a {
+  color: LightGray;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  transition: color 0.3s;
+}
+
+/* Scrolled State */
+.header.scrolled {
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.header.scrolled .logo,
+.header.scrolled .nav a {
+  color: #333;
+}
+
+.header.scrolled .hamburger span {
+  background-color: #333;
+}
+
+/* Hover States */
+.header:not(.scrolled) .logo:hover,
+.header:not(.scrolled) .nav a:hover {
+  color: white;
+}
+
+.header.scrolled .logo:hover,
+.header.scrolled .nav a:hover {
+  color: #0dcaf0;
+}
+
+/* Hamburger */
+.hamburger {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1002;
+}
+
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px 0;
+  background-color: LightGray;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+}
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.active span:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+  .nav {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.95);
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+  }
+  .nav.active {
+    max-height: 400px;
+  }
+  .nav ul {
+    flex-direction: column;
+    padding: 20px 0;
+    gap: 0;
+  }
+  .nav a {
+    color: #333;
+    display: block;
+    padding: 15px;
+    text-align: center;
+  }
+}

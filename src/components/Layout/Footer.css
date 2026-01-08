@@ -1,0 +1,50 @@
+.footer {
+  padding: 50px 0 30px;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  text-align: center;
+}
+
+.social-links {
+  margin-bottom: 25px;
+}
+
+.social-icon {
+  display: inline-block;
+  margin: 0 15px;
+  transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+  transform: translateY(-5px);
+}
+
+.social-icon img {
+  width: 32px;
+  height: 32px;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.1));
+}
+
+.copyright-text {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin: 0;
+}
+
+.attributions {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+.attributions summary {
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+.attributions ul {
+  list-style: none;
+  padding: 0;
+}
+.attributions a {
+  color: #888;
+  text-decoration: none;
+}
