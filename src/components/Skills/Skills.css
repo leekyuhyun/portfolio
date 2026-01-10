@@ -1,81 +1,75 @@
-.skills-section {
-  padding: 80px 0;
-  background-color: #fcfcfc;
-}
-
-.skills-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  gap: 30px;
-  margin-top: 50px;
+.skills-content {
+  padding: 10px;
 }
 
 .skill-category-card {
-  background: #fff;
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 20px; /* AboutMe 카드와 통일 */
   padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
-  transition: transform 0.3s ease;
-  border: 1px solid #f0f0f0;
+  transition: all 0.3s ease;
 }
 
 .skill-category-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-5px);
+  border-color: #0ea5e9;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
 }
 
-.category-header {
+.category-icon-wrapper {
+  background: #f0f9ff;
+  width: 44px;
+  height: 44px;
   display: flex;
   align-items: center;
-  margin-bottom: 25px;
-  border-bottom: 2px solid #f8f9fa;
-  padding-bottom: 15px;
+  justify-content: center;
+  border-radius: 12px;
 }
 
 .category-icon {
-  width: 30px;
-  height: 30px;
-  margin-right: 12px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
 }
 
 .category-name {
-  font-size: 1.6rem;
+  font-size: 1.25rem;
   font-weight: 700;
-  color: #333;
-  margin: 0;
+  color: #1e293b;
 }
 
-.skill-list {
+.skill-badge-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 12px;
 }
 
-.skill-item {
-  padding: 8px 18px;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 600;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: filter 0.2s ease;
+.skill-badge-item {
+  padding: 6px 14px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
   cursor: default;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
 }
 
-.skill-item:hover {
+.skill-badge-item:hover {
+  transform: scale(1.05);
   filter: brightness(1.1);
 }
 
-/* 반응형 모바일 */
+/* 모바일 대응 */
 @media (max-width: 768px) {
-  .skills-container {
-    grid-template-columns: 1fr;
-  }
-
   .skill-category-card {
     padding: 20px;
   }
-
   .category-name {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
+  }
+  .skill-badge-item {
+    font-size: 0.75rem;
+    padding: 5px 10px;
   }
 }

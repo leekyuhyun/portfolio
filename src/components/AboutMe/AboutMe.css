@@ -1,52 +1,66 @@
 .about-content {
   padding: 10px;
 }
-
 .section-title {
   font-size: 1.8rem;
   font-weight: 800;
   color: #1e293b;
   margin-bottom: 5px;
 }
-
 .title-underline {
   width: 40px;
   height: 4px;
   background: #0ea5e9;
   border-radius: 2px;
 }
-
 .motto {
   font-size: 1.2rem;
   font-weight: 700;
   color: #0ea5e9;
   margin-top: 20px;
 }
-
 .description {
   color: #475569;
   line-height: 1.6;
 }
-
-/* 정보 카드 내 아이콘 크기 고정 */
-.info-card .icon {
-  width: 24px !important;
-  height: 24px !important;
-  object-fit: contain;
+.sub-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1e293b;
 }
 
-.info-card {
-  background: #f8fafc;
+.achievement-service-card {
+  background: #ffffff;
   border: 1px solid #f1f5f9;
-  border-radius: 12px;
-  height: 100%;
+  border-radius: 20px;
+  transition: all 0.3s ease;
 }
-
-/* 트로피/수상 내역 아이콘 */
-.achievement-item .icon {
-  width: 20px !important;
-  height: 20px !important;
+.achievement-service-card:hover {
+  transform: translateY(-5px);
+  border-color: #0ea5e9;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+}
+.achievement-icon-box {
+  background: #f0f9ff;
+  width: 48px;
+  height: 48px;
+  min-width: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+}
+.achievement-icon-box img {
+  width: 24px;
+  height: 24px;
   object-fit: contain;
+}
+.achievement-item-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.4;
+  word-break: keep-all;
 }
 
 @media (max-width: 768px) {
@@ -58,5 +72,8 @@
   }
   .description {
     font-size: 0.95rem;
+  }
+  .achievement-item-name {
+    font-size: 0.9rem;
   }
 }
