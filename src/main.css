@@ -1,86 +1,17 @@
-:root {
-  --bs-primary: #0d6efd;
-  --bs-secondary: #6c757d;
-  --text-color: #212529;
-  --text-light-color: #f8f9fa;
-  --header-height: 6rem;
-  --font-main: 'Noto Sans KR', sans-serif;
-}
-
-html {
-  font-size: 62.5%;
-  scroll-behavior: smooth;
-  scroll-padding-top: var(--header-height);
-}
-
+/* src/main.css */
 body {
-  font-family: var(--font-main);
-  font-size: 1.6rem;
-  line-height: 1.6;
-  background-color: #f8f9fa;
-  word-break: keep-all; /* 한글 단어 잘림 방지 */
-  overflow-wrap: break-word; /* 긴 영문/URL 강제 줄바꿈 */
+  margin: 0;
+  /* 밝은 하늘색 톤의 배경 그라데이션 */
+  background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
+  color: #333;
+  font-family: 'Pretendard', sans-serif;
+  min-height: 100vh;
+  display: block; /* 기존 flex 제거 */
 }
 
-.section {
-  padding: 8rem 1rem;
-  position: relative;
-}
-
-/* 섹션 사이의 점선 구분선 */
-.section:not(#about)::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 114rem;
-  max-width: 95%;
-  height: 2px;
-  background-image: repeating-linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.2) 0,
-    rgba(0, 0, 0, 0.2) 20px,
-    transparent 20px,
-    transparent 35px
-  );
-}
-
-.section-title {
-  font-size: 3.6rem;
-  font-weight: 700;
-  margin-bottom: 5rem;
-}
-
-/* 반응형 설정 */
-@media (min-width: 992px) {
-  html {
-    font-size: 70%;
-  }
-}
-
-@media (max-width: 768px) {
-  html {
-    font-size: 55%;
-  }
-  .section {
-    padding: 6rem 2rem;
-  }
-  .section-title {
-    font-size: 3rem;
-    margin-bottom: 4rem;
-  }
-}
-
-@media (max-width: 576px) {
-  html {
-    font-size: 50%;
-  }
-  .section {
-    padding: 5rem 1.5rem;
-  }
-  .section-title {
-    font-size: 2.8rem;
-    margin-bottom: 3rem;
-  }
+#root {
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0;
 }

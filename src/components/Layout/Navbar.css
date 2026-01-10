@@ -1,0 +1,58 @@
+/* PC 스타일: 메인 카드 우측 상단에 딱 붙게 배치 */
+.navbar-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* 배경은 하늘색 테마에 맞는 밝은 반투명 */
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border: 1px solid #e0e7ff;
+  /* 카드 모서리에 맞게 오른쪽 위는 0, 나머지는 둥글게 */
+  border-radius: 0 20px 0 20px;
+  padding: 0 20px;
+  z-index: 20;
+}
+
+.navbar-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 15px;
+}
+
+.navbar-link {
+  background: none;
+  border: none;
+  padding: 20px 10px;
+  font-weight: 600;
+  color: #64748b; /* 기본 회색 */
+  font-size: 0.95rem;
+  transition: 0.3s;
+}
+
+/* 활성화 시 기존 포인트 컬러인 하늘색 적용 */
+.navbar-link.active {
+  color: #0ea5e9;
+}
+
+/* --- 화면이 좁아질 때 (1200px 미만) 하단 탭바로 변경 --- */
+@media (max-width: 1199px) {
+  .navbar-container {
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+    border: 1px solid #e0e7ff;
+    border-bottom: none;
+    padding: 10px 0;
+    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
+  }
+
+  .navbar-list {
+    justify-content: space-around;
+  }
+}
