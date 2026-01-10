@@ -1,52 +1,55 @@
 import React from 'react';
 import './Projects.css';
-// projects_data.js에 정의된 정확한 변수명인 projectsData를 불러옵니다.
 import { projectsData } from '../../data/projects_data';
 
 const Projects = () => {
   return (
-    <section id="projects" className="projects-section">
-      <div className="container">
-        <h2 className="section-title text-center">{'<PROJECTS />'}</h2>
+    <div className="projects-content" data-aos="fade-up">
+      <header className="mb-4">
+        <h2 className="section-title">Projects</h2>
+        <div className="title-underline"></div>
+      </header>
 
-        <div className="projects-grid">
-          {/* projectsData 배열을 순회하며 카드를 생성합니다. */}
+      <div className="projects-grid-container mt-5">
+        <div className="row row-cols-1 row-cols-lg-2 g-4">
           {projectsData &&
             projectsData.map((project, index) => (
-              <div key={index} className="project-card" data-aos="fade-up">
-                <div className="project-content">
-                  <div className="project-header">
-                    <span className="project-type">{project.type}</span>
-                    <span className="project-period">{project.period}</span>
+              <div key={index} className="col">
+                <div className="project-item-card h-100 shadow-sm">
+                  <div className="project-card-header d-flex justify-content-between align-items-start mb-3">
+                    <span className={`project-badge ${project.type.toLowerCase()}`}>
+                      {project.type}
+                    </span>
+                    <span className="project-period-text">{project.period}</span>
                   </div>
 
-                  <h3 className="project-title">{project.name}</h3>
-                  <p className="project-context"># {project.context}</p>
-
-                  <div className="project-description">
-                    <p>{project.description}</p>
+                  <div className="project-info mb-4">
+                    <h3 className="project-item-title mb-1">{project.name}</h3>
+                    <p className="project-context-text text-secondary mb-3">
+                      <span className="context-icon">📌</span> {project.context}
+                    </p>
+                    <p className="project-desc-text text-muted">{project.description}</p>
                   </div>
 
-                  {/* 기술 스택 태그 출력 */}
-                  <div className="project-tags">
-                    {project.tags &&
-                      project.tags.map((tag, tIndex) => (
-                        <span key={tIndex} className="tag">
-                          {tag}
-                        </span>
-                      ))}
-                  </div>
+                  <div className="project-footer mt-auto">
+                    <div className="project-tag-list d-flex flex-wrap gap-2 mb-4">
+                      {project.tags &&
+                        project.tags.map((tag, tIndex) => (
+                          <span key={tIndex} className="tech-tag">
+                            {tag}
+                          </span>
+                        ))}
+                    </div>
 
-                  {/* GitHub 링크 버튼 (보안 속성 rel="noreferrer" 추가) */}
-                  <div className="project-links">
                     {project.githubUrl && (
                       <a
                         href={project.githubUrl}
                         target="_blank"
                         rel="noreferrer"
-                        className="link-btn github"
+                        className="github-link-btn"
                       >
-                        GitHub 바로가기
+                        <img src="/assets/image/git-icon.png" alt="git" className="btn-icon" />
+                        GitHub Repository
                       </a>
                     )}
                   </div>
@@ -55,7 +58,7 @@ const Projects = () => {
             ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 
