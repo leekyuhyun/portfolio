@@ -1,85 +1,98 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Activity.css';
 import { onCampusData, offCampusData, ipAchievementsData } from '../../data/activity_data';
 
 const Activity = () => {
-  return (
-    <section id="activity" className="activity-section">
-      <div className="container">
-        <h2 className="section-title text-center">{'<ACTIVITY />'}</h2>
+  const [expandedId, setExpandedId] = useState(null);
 
-        {/* 1. 교내 활동 섹션 */}
-        <div className="activity-group">
-          <h3 className="group-title"># {onCampusData.title}</h3>
-          <div className="activity-grid">
-            {onCampusData.items.map((item, index) => (
-              <div key={index} className="activity-card">
-                <span className="activity-period">{item.period}</span>
-                <h4 className="activity-name">{item.title}</h4>
-                {item.topic && (
-                  <p className="activity-topic">
-                    <strong>주제:</strong> {item.topic}
-                  </p>
-                )}
-                <p className="activity-role">
-                  <strong>역할:</strong> {item.role}
-                </p>
-                {item.details && <p className="activity-details">{item.details}</p>}
-              </div>
-            ))}
+  const toggleExpand = (id) => {
+    setExpandedId(expandedId === id ? null : id);
+  };
+
+  // category 프로프를 추가하여 색상을 구분합니다.
+  const ActivityItem = ({ item, id, category }) => {
+    const isExpanded = expandedId === id;
+
+    return (
+      <div className={`activity-list-item ${category} ${isExpanded ? 'active' : ''}`}>
+        <div className="activity-item-header" onClick={() => toggleExpand(id)}>
+          <div className="activity-item-main">
+            <span className="activity-period-badge">{item.period}</span>
+            <h4 className="activity-item-title">{item.title}</h4>
           </div>
+          <span className={`expand-icon ${isExpanded ? 'rotated' : ''}`}>▼</span>
         </div>
 
-        {/* 2. 교외 활동 섹션 */}
-        <div className="activity-group">
-          <h3 className="group-title"># {offCampusData.title}</h3>
-          <div className="activity-grid">
-            {offCampusData.items.map((item, index) => (
-              <div key={index} className="activity-card highlight">
-                <span className="activity-period">{item.period}</span>
-                <h4 className="activity-name">{item.title}</h4>
-                {item.topic && (
-                  <p className="activity-topic">
-                    <strong>주제:</strong> {item.topic}
-                  </p>
-                )}
-                {item.role && (
-                  <p className="activity-role">
-                    <strong>역할:</strong> {item.role}
-                  </p>
-                )}
-                {item.details && <p className="activity-details">{item.details}</p>}
+        <div className={`activity-item-details ${isExpanded ? 'show' : ''}`}>
+          <div className="details-inner">
+            {item.topic && (
+              <p className="details-text">
+                <strong>주제:</strong> {item.topic}
+              </p>
+            )}
+            {item.role && (
+              <p className="details-text">
+                <strong>역할:</strong> {item.role}
+              </p>
+            )}
+            {item.details && (
+              <div className="details-text details-extra">
+                <p dangerouslySetInnerHTML={{ __html: item.details }}></p>
               </div>
-            ))}
-          </div>
-        </div>
-
-        {/* 3. 특허 및 지식재산 성과 섹션 */}
-        <div className="activity-group">
-          <h3 className="group-title"># {ipAchievementsData.title}</h3>
-          <div className="ip-list">
-            {ipAchievementsData.items.map((item, index) => (
-              <div key={index} className="ip-card">
-                <div className="ip-header">
-                  <span className="ip-period">{item.period}</span>
-                  <h4 className="ip-title">{item.title}</h4>
-                </div>
-                <div className="ip-body">
-                  <p>
-                    <strong>주제:</strong> {item.topic}
-                  </p>
-                  <p>
-                    <strong>역할:</strong> {item.role}
-                  </p>
-                  {/* details의 <br> 태그를 렌더링하기 위해 dangerouslySetInnerHTML 사용 */}
-                  <p className="ip-details" dangerouslySetInnerHTML={{ __html: item.details }}></p>
-                </div>
-              </div>
-            ))}
+            )}
           </div>
         </div>
       </div>
-    </section>
+    );
+  };
+
+  return (
+    <div className="activity-content" data-aos="fade-up">
+      <header className="mb-4">
+        <h2 className="section-title">Activity</h2>
+        <div className="title-underline"></div>
+      </header>
+
+      {/* 1. 교내 활동 - 블루(on-campus) */}
+      <div className="activity-group-box">
+        <h3 className="group-title-text title-blue"># {onCampusData.title}</h3>
+        <div className="activity-list-container">
+          {onCampusData.items.map((item, index) => (
+            <ActivityItem key={`on-${index}`} item={item} id={`on-${index}`} category="on-campus" />
+          ))}
+        </div>
+      </div>
+
+      {/* 2. 교외 활동 - 그린(off-campus) */}
+      <div className="activity-group-box">
+        <h3 className="group-title-text title-green"># {offCampusData.title}</h3>
+        <div className="activity-list-container">
+          {offCampusData.items.map((item, index) => (
+            <ActivityItem
+              key={`off-${index}`}
+              item={item}
+              id={`off-${index}`}
+              category="off-campus"
+            />
+          ))}
+        </div>
+      </div>
+
+      {/* 3. 특허 및 성과 - 옐로우/오렌지(ip-achieve) */}
+      <div className="activity-group-box">
+        <h3 className="group-title-text title-yellow"># {ipAchievementsData.title}</h3>
+        <div className="activity-list-container">
+          {ipAchievementsData.items.map((item, index) => (
+            <ActivityItem
+              key={`ip-${index}`}
+              item={item}
+              id={`ip-${index}`}
+              category="ip-achieve"
+            />
+          ))}
+        </div>
+      </div>
+    </div>
   );
 };
 
