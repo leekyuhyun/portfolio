@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
-import Sidebar from '../components/Layout/Sidebar';
-import Navbar from '../components/Layout/Navbar';
-import AboutMe from '../components/AboutMe/AboutMe';
-import Activity from '../components/Activity/Activity';
-import Skills from '../components/Skills/Skills';
-import Projects from '../components/Projects/Projects';
+import Sidebar from '@/components/Layout/Sidebar';
+import Navbar from '@/components/Layout/Navbar';
+import AboutMe from '@/components/AboutMe/AboutMe';
+import Activity from '@/components/Activity/Activity';
+import Skills from '@/components/Skills/Skills';
+import Projects from '@/components/Projects/Projects';
+import DevSteps from '@/components/DevSteps/DevSteps';
 import './HomeView.css';
 
 const HomeView = () => {
@@ -20,6 +21,8 @@ const HomeView = () => {
         return <Skills />;
       case 'Projects':
         return <Projects />;
+      case 'Dev Steps':
+        return <DevSteps />;
       default:
         return <AboutMe />;
     }

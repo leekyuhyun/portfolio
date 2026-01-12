@@ -1,0 +1,35 @@
+name: Update Velog Posts
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # 매일 한국 시간 오전 9시 실행
+  workflow_dispatch: # 버튼 눌러서 수동 실행 가능
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+          
+      - name: Install dependencies
+        run: npm install rss-parser
+        
+      - name: Run update script
+        run: node scripts/update_blog.js
+        
+      - name: Commit and Push changes
+        run: |
+          # 본인의 이름과 이메일로 수정합니다.
+          git config --global user.name 'leekyuhyun'
+          git config --global user.email 'leekh010502@gmail.com' 
+          
+          git add src/data/blog_data.js
+          
+          # 변경사항이 있을 때만 커밋 및 푸시
+          git diff --quiet && git diff --staged --quiet || (git commit -m "chore : update latest velog posts" && git push)

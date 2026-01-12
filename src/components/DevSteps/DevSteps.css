@@ -1,0 +1,71 @@
+.dev-steps-content {
+  padding: 10px;
+  margin-top: 50px;
+}
+
+/* 글자색은 AboutMe와 동일한 진한 회색/검정 계열 */
+.section-title {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #1e293b;
+  margin-bottom: 5px;
+}
+
+/* 밑줄만 파란색 포인트 적용 */
+.title-underline {
+  width: 40px;
+  height: 4px;
+  background: #0ea5e9;
+  border-radius: 2px;
+}
+
+.description {
+  color: #475569;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.blog-card-link {
+  text-decoration: none;
+  display: block;
+  height: 100%;
+}
+
+.achievement-service-card {
+  background: #ffffff;
+  border: 1px solid #f1f5f9;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.achievement-service-card:hover {
+  transform: translateY(-5px);
+  border-color: #0ea5e9;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.05) !important;
+}
+
+.blog-date {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #94a3b8;
+}
+
+.achievement-item-name {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.4;
+  word-break: keep-all;
+}
+
+.read-more-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: #0ea5e9;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 1.5rem;
+  }
+}
