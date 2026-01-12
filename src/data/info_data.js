@@ -1,4 +1,3 @@
-// About Me 섹션의 데이터를 객체 형태로 관리합니다.
 export const infoData = {
   profile: {
     imageUrl: '/assets/image/Profile.jpg',

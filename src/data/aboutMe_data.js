@@ -1,4 +1,3 @@
-// src/data/aboutMe_data.js
 export const aboutMeData = {
   services: [
     {

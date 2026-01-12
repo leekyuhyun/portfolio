@@ -1,6 +1,5 @@
-import React from 'react';
 import './Skills.css';
-import { skillsData } from '../../data/skills_data';
+import { skillsData } from '@/data/skills_data';
 
 const Skills = () => {
   const baseUrl = import.meta.env.BASE_URL;

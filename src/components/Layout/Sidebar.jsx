@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { infoData } from '../../data/info_data';
+import { infoData } from '@/data/info_data';
 import './Sidebar.css';
 
 const Sidebar = () => {
