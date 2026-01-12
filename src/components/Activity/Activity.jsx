@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import './Activity.css';
-import { onCampusData, offCampusData, ipAchievementsData } from '../../data/activity_data';
+import { onCampusData, offCampusData, ipAchievementsData } from '@/data/activity_data';
 
 const Activity = () => {
   const [expandedId, setExpandedId] = useState(null);
@@ -9,7 +9,6 @@ const Activity = () => {
     setExpandedId(expandedId === id ? null : id);
   };
 
-  // category 프로프를 추가하여 색상을 구분합니다.
   const ActivityItem = ({ item, id, category }) => {
     const isExpanded = expandedId === id;
 

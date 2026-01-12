@@ -1,9 +1,7 @@
-// Journey 섹션의 모든 데이터를 객체 형태로 관리합니다.
 export const journeyData = {
   // "What I'm Learning" 섹션 데이터
   learning: {
     title: "What I'm Learning",
-    // ▼▼▼ 복잡한 내용을 크로스 브라우징으로 수정했습니다 ▼▼▼
     items: [
       {
         subject: 'Vue.js 반응형 시스템 및 성능 최적화',

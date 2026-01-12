@@ -1,7 +1,6 @@
-import React from 'react';
+import { aboutMeData } from '@/data/aboutMe_data';
+import { infoData } from '@/data/info_data';
 import './AboutMe.css';
-import { aboutMeData } from '../../data/aboutMe_data';
-import { infoData } from '../../data/info_data';
 
 const AboutMe = () => {
   const info = aboutMeData;

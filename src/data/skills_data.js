@@ -1,4 +1,3 @@
-// 스킬 데이터를 배열 형태로 관리합니다.
 export const skillsData = [
   /*{
     name: 'Language',
@@ -59,12 +58,13 @@ export const skillsData = [
     ],
   },
 
-  /* {
+  {
     name: 'Design & Collaboration',
     icon: '/assets/image/design-icon.png',
     skills: [
       { name: 'Figma', color: '#F24E1E' },
       { name: 'Notion', color: '#000000' },
+      { name: 'Slack', color: '#4A154B' },
     ],
-  }, */
+  },
 ];
