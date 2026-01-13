@@ -15,7 +15,7 @@ export const infoData = {
     },
     {
       name: 'Velog',
-      url: 'https://velog.io/@leekyuhyun',
+      url: 'https://velog.io/@leekh010502',
       icon: '/assets/image/velog-icon.png',
     },
   ],
