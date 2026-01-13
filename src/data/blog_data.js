@@ -1,5 +1,11 @@
 export const blogData = [
   {
+    "title": "프로그래머스 웹 풀스택 2주 (01월 13일)",
+    "date": "2026. 1. 13.",
+    "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-2%EC%A3%BC-01%EC%9B%94-13%EC%9D%BC",
+    "summary": "데이터베이스 / 실전 프로젝트 (2)\n데이터베이스\n데이터베이스란\n데이터를 통합하여 효율적으로 관리하기 위한 데이터 집합체를 데이터베이스(Database,줄여서 DB)\n데이터를 구조..."
+  },
+  {
     "title": "프로그래머스 웹 풀스택 2주 (01월 12일)",
     "date": "2026. 1. 12.",
     "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-2%EC%A3%BC-01%EC%9B%94-12%EC%9D%BC",
@@ -16,11 +22,5 @@ export const blogData = [
     "date": "2026. 1. 7.",
     "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-1%EC%A3%BC-01%EC%9B%94-8%EC%9D%BC",
     "summary": "웹 서비스의 이해\n웹이란?\n월드 와이드 웹 (World Wide Web)이란, 인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 공간\n간단하게 WWW, W3 그리고 월..."
-  },
-  {
-    "title": "프로그래머스 웹 풀스택 1주 (01월 07일)",
-    "date": "2026. 1. 6.",
-    "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-1%EC%A3%BC-01%EC%9B%94-07%EC%9D%BC",
-    "summary": "협업 Tool 알아보기\n들어가기전 용어 정리\n애자일\n개념\n\"민첩한'이라는 뜻으로, 처음부터 끝까지 완벽한 계획을 세우기보다 작은 단위로 빠르게 실행하고 피드백을 받아 수정해나가는 ..."
   }
 ];
