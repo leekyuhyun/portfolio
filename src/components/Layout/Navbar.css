@@ -36,43 +36,33 @@
   color: #0ea5e9;
 }
 
-/* --- 화면이 좁아질 때 (1200px 미만) 하단 탭바로 변경 --- */
 @media (max-width: 1199px) {
   .navbar-container {
-    position: fixed;
-    top: auto;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    border-radius: 20px 20px 0 0;
-    border: 1px solid #e0e7ff;
-    border-bottom: none;
-    padding: 10px 0;
-    box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.05);
+    padding: 5px 0;
+    /* 하단 탭바가 너무 높지 않게 조정 */
   }
 
   .navbar-list {
-    justify-content: space-around;
+    display: flex;
+    justify-content: space-evenly; /* 메뉴들을 균등하게 배치 */
+    gap: 0; /* 간격을 없애고 패딩으로 조절 */
+    padding: 0 2px;
+  }
+
+  .navbar-link {
+    font-size: 0.72rem !important;
+    padding: 8px 4px !important;
+    letter-spacing: -0.6px; /* 자간을 더 타이트하게 조정 */
+    white-space: nowrap;
+    word-break: keep-all;
+    transition: all 0.2s ease;
   }
 }
 
-@media (max-width: 768px) {
-  .nav-list {
-    display: flex;
-    gap: 10px;
-    overflow-x: auto;
-    white-space: nowrap;
-    padding-bottom: 5px;
-    -webkit-overflow-scrolling: touch;
-  }
-
-  .nav-link {
-    font-size: 0.8rem;
-    padding: 6px 10px;
-  }
-
-  .nav-list::-webkit-scrollbar {
-    display: none;
+@media (max-width: 375px) {
+  .navbar-link {
+    font-size: 0.68rem !important;
+    padding: 8px 2px !important;
+    letter-spacing: -0.8px;
   }
 }
