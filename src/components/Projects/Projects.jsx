@@ -1,3 +1,4 @@
+import gitIcon from '/assets/image/git-icon.png';
 import './Projects.css';
 import { projectsData } from '@/data/projects_data';
 
@@ -47,7 +48,7 @@ const Projects = () => {
                         rel="noreferrer"
                         className="github-link-btn"
                       >
-                        <img src="/assets/image/git-icon.png" alt="git" className="btn-icon" />
+                        <img src={gitIcon} alt="git" className="btn-icon" />
                         GitHub Repository
                       </a>
                     )}
