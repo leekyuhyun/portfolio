@@ -11,6 +11,13 @@ const Skills = () => {
         <div className="title-underline"></div>
       </header>
 
+      <div className="intro-text mb-5">
+        <p className="description">
+          기본을 다지고 새로운 기술을 익히며 꾸준히 성장하고 있습니다. <br />각 기술이 가진 원리와
+          효율적인 활용 방안을 깊이 있게 고민합니다.
+        </p>
+      </div>
+
       <div className="skills-grid-container mt-5">
         <div className="row row-cols-1 row-cols-md-2 g-4">
           {skillsData.map((category, index) => (

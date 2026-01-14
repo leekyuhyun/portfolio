@@ -2,6 +2,12 @@
   padding: 10px;
 }
 
+.description {
+  color: #475569;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
 /* 카드 스타일 통일 */
 .project-item-card {
   background: #ffffff;
@@ -104,5 +110,8 @@
   }
   .project-item-title {
     font-size: 1.15rem;
+  }
+  .description {
+    font-size: 0.9rem;
   }
 }

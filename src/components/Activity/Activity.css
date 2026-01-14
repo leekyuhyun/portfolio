@@ -146,7 +146,7 @@
   .activity-item-main {
     flex-direction: column; /* 배지 아래로 제목 배치 */
     align-items: flex-start;
-    gap: 4px;
+    gap: 15px;
     width: 100%;
   }
 
@@ -155,5 +155,29 @@
     position: absolute; /* 정렬 흐름에서 벗어나 절대 위치로 고정 */
     right: 20px; /* 오른쪽 끝에서 20px */
     top: 22px; /* 날짜 배지 높이에 맞춰서 상단에서 22px (조절 가능) */
+  }
+  .group-title-text {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+  }
+  .activity-period-badge {
+    color: white;
+    padding: 4px 12px;
+    border-radius: 6px;
+    font-size: 0.75em;
+    font-weight: 700;
+    white-space: nowrap;
+  }
+  .activity-item-title {
+    font-size: 0.9rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin: 0;
+  }
+  .details-text {
+    font-size: 0.85rem;
+    color: #475569;
+    line-height: 1.6;
+    margin-bottom: 10px;
   }
 }

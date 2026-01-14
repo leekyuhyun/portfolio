@@ -2,6 +2,12 @@
   padding: 10px;
 }
 
+.description {
+  color: #475569;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
 .skill-category-card {
   background: #ffffff;
   border: 1px solid #f1f5f9;
@@ -71,5 +77,8 @@
   .skill-badge-item {
     font-size: 0.75rem;
     padding: 5px 10px;
+  }
+  .description {
+    font-size: 0.9rem;
   }
 }

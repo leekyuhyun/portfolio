@@ -10,6 +10,14 @@ const Projects = () => {
         <div className="title-underline"></div>
       </header>
 
+      <div className="intro-text mb-5">
+        <p className="description">
+          기록하며 쌓아온 고민의 결과물입니다. <br />
+          단순히 코드를 작성하는 것에 그치지 않고, <br />
+          해결책을 찾기 위해 분투한 과정들을 담았습니다.
+        </p>
+      </div>
+
       <div className="projects-grid-container mt-5">
         <div className="row row-cols-1 row-cols-lg-2 g-4">
           {projectsData &&

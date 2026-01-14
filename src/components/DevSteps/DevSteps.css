@@ -67,4 +67,16 @@
   .section-title {
     font-size: 1.5rem;
   }
+  .description {
+    font-size: 0.9rem;
+  }
+  .achievement-item-name {
+    font-size: 0.9rem;
+  }
+  .text-secondary {
+    font-size: 0.8rem;
+  }
+  .read-more-text {
+    font-size: 0.7rem;
+  }
 }
