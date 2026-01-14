@@ -1,5 +1,11 @@
 export const blogData = [
   {
+    "title": "프로그래머스 웹 풀스택 2주 (01월 14일)",
+    "date": "2026. 1. 14.",
+    "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-2%EC%A3%BC-01%EC%9B%94-14%EC%9D%BC",
+    "summary": "웹 포트폴리오 제작 및 데이터베이스 모델링\n웹 포트폴리오 제작\nHTML + CSS로 간단한 웹 포트폴리오 제작을 했습니다\n결과 화면\n  \n링크\nkyulee's portfolio\n데..."
+  },
+  {
     "title": "프로그래머스 웹 풀스택 2주 (01월 13일)",
     "date": "2026. 1. 13.",
     "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-2%EC%A3%BC-01%EC%9B%94-13%EC%9D%BC",
@@ -16,11 +22,5 @@ export const blogData = [
     "date": "2026. 1. 8.",
     "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-1%EC%A3%BC-01%EC%9B%94-09%EC%9D%BC",
     "summary": "CSS, JavaScript\n오늘 실습은 1월 8일에 작성한 login.html을 기반으로 진행\nCSS\nCascading Style Sheets의 약자로, HTML을 꾸며주는 언어..."
-  },
-  {
-    "title": "프로그래머스 웹 풀스택 1주 (01월 8일)",
-    "date": "2026. 1. 7.",
-    "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-1%EC%A3%BC-01%EC%9B%94-8%EC%9D%BC",
-    "summary": "웹 서비스의 이해\n웹이란?\n월드 와이드 웹 (World Wide Web)이란, 인터넷에 연결된 컴퓨터를 통해 사람들이 정보를 공유할 수 있는 공간\n간단하게 WWW, W3 그리고 월..."
   }
 ];
