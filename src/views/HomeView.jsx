@@ -21,7 +21,7 @@ const HomeView = () => {
         return <Skills />;
       case 'Projects':
         return <Projects />;
-      case 'Dev Steps':
+      case 'DevSteps':
         return <DevSteps />;
       default:
         return <AboutMe />;

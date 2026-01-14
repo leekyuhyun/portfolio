@@ -1,7 +1,7 @@
 import './Navbar.css';
 
 const Navbar = ({ activeTab, setActiveTab }) => {
-  const menus = ['AboutMe', 'Activity', 'Skills', 'Projects', 'Dev Steps'];
+  const menus = ['AboutMe', 'Activity', 'Skills', 'Projects', 'DevSteps'];
 
   return (
     <nav className="navbar-container">

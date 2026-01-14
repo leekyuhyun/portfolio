@@ -132,3 +132,28 @@
   padding-top: 15px;
   border-top: 1px dashed #e2e8f0;
 }
+
+@media (max-width: 768px) {
+  .activity-item-header {
+    position: relative; /* 화살표 위치를 잡기 위한 기준점 */
+    flex-direction: column; /* 세로 배치 */
+    align-items: flex-start; /* 왼쪽 정렬 */
+    gap: 8px;
+    /* 화살표와 겹치지 않도록 오른쪽 여백을 충분히 줍니다 */
+    padding: 15px 40px 15px 20px;
+  }
+
+  .activity-item-main {
+    flex-direction: column; /* 배지 아래로 제목 배치 */
+    align-items: flex-start;
+    gap: 4px;
+    width: 100%;
+  }
+
+  /* 화살표 아이콘을 우측 상단에 고정 */
+  .expand-icon {
+    position: absolute; /* 정렬 흐름에서 벗어나 절대 위치로 고정 */
+    right: 20px; /* 오른쪽 끝에서 20px */
+    top: 22px; /* 날짜 배지 높이에 맞춰서 상단에서 22px (조절 가능) */
+  }
+}

@@ -6,7 +6,7 @@ const DevSteps = () => {
     <div className="dev-steps-content" data-aos="fade-up">
       <header className="mb-4">
         {/* 다른 섹션처럼 글자는 검은색으로 유지 */}
-        <h2 className="section-title">Dev Steps</h2>
+        <h2 className="section-title">DevSteps</h2>
         {/* 파란색 밑줄 요소 */}
         <div className="title-underline"></div>
       </header>
