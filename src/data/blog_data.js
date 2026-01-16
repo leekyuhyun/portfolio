@@ -1,5 +1,17 @@
 export const blogData = [
   {
+    "title": "프로그래머스 웹 풀스택 2주 (01월 16일)",
+    "date": "2026. 1. 16.",
+    "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-2%EC%A3%BC-01%EC%9B%94-16%EC%9D%BC",
+    "summary": "Node.js, 모듈, 라이브러리, 프레임워크\nNode.js\n특징\n싱글 스레드\n한 번에 한 가지 일만 처리하는 일꾼이 한 명뿐이지만, 일을 매우 빠르게 번갈아 처리하여 효율적으로 ..."
+  },
+  {
+    "title": "프로그래머스 웹 풀스택 2주 (01월 15일)",
+    "date": "2026. 1. 15.",
+    "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-2%EC%A3%BC-01%EC%9B%94-15%EC%9D%BC",
+    "summary": "API, REST API, URL\nAPI란?\nApplication Programming Interface\n서로 다른 소프트웨어가 데이터를 주고받거나 기능을 호출할 수 있도록 규격화..."
+  },
+  {
     "title": "프로그래머스 웹 풀스택 2주 (01월 14일)",
     "date": "2026. 1. 14.",
     "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-2%EC%A3%BC-01%EC%9B%94-14%EC%9D%BC",
@@ -10,17 +22,5 @@ export const blogData = [
     "date": "2026. 1. 13.",
     "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-2%EC%A3%BC-01%EC%9B%94-13%EC%9D%BC",
     "summary": "데이터베이스 / 실전 프로젝트 (2)\n데이터베이스\n데이터베이스란\n데이터를 통합하여 효율적으로 관리하기 위한 데이터 집합체를 데이터베이스(Database,줄여서 DB)\n데이터를 구조..."
-  },
-  {
-    "title": "프로그래머스 웹 풀스택 2주 (01월 12일)",
-    "date": "2026. 1. 12.",
-    "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-2%EC%A3%BC-01%EC%9B%94-12%EC%9D%BC",
-    "summary": "백엔드(Node.js) / 실전 프로젝트 (1)\n백엔드의 구조\n웹 서버\n정적 페이지에 대해 대응\n동적 페이지에 대한 처리는 직접 처리하지 않고, 웹 어플리케이션 서버에게 전달\n정적..."
-  },
-  {
-    "title": "프로그래머스 웹 풀스택 1주 (01월 09일)",
-    "date": "2026. 1. 8.",
-    "url": "https://velog.io/@leekh010502/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-%EC%9B%B9-%ED%92%80%EC%8A%A4%ED%83%9D-1%EC%A3%BC-01%EC%9B%94-09%EC%9D%BC",
-    "summary": "CSS, JavaScript\n오늘 실습은 1월 8일에 작성한 login.html을 기반으로 진행\nCSS\nCascading Style Sheets의 약자로, HTML을 꾸며주는 언어..."
   }
 ];
