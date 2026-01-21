@@ -3,15 +3,18 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches:
-      - main  # main 브랜치에 푸시될 때 실행
-
+      - main # main 브랜치에 푸시될 때 실행
+  workflow_run:
+    workflows: ['Update Velog Posts']
+    types:
+      - completed
 permissions:
   contents: read
   pages: write
   id-token: write
 
 concurrency:
-  group: "pages"
+  group: 'pages'
   cancel-in-progress: false
 
 jobs:
