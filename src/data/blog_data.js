@@ -1,5 +1,17 @@
 export const blogData = [
   {
+    "title": "[Docker 🐳] 4. DockerFile을 활용해 이미지 직접 만들기",
+    "date": "2026. 2. 3.",
+    "url": "https://velog.io/@leekh010502/Docker-4.-DockerFile%EC%9D%84-%ED%99%9C%EC%9A%A9%ED%95%B4-%EC%9D%B4%EB%AF%B8%EC%A7%80-%EC%A7%81%EC%A0%91-%EB%A7%8C%EB%93%A4%EA%B8%B0",
+    "summary": "DockerFile이란?\nDocker 이미지를 만들게 해주는 파일이다.\nFROM\nFROM은 베이스 이미지를 생성하는 역할을 한다.\nDocker 컨테이너를 특정 초기 이미지 기반으로..."
+  },
+  {
+    "title": "[week5] 백엔드 심화 : 인증과 비동기처리(3) - 02/03",
+    "date": "2026. 2. 3.",
+    "url": "https://velog.io/@leekh010502/week5-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%8B%AC%ED%99%94-%EC%9D%B8%EC%A6%9D%EA%B3%BC-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%B2%98%EB%A6%AC3-0203",
+    "summary": "DB 연동 실습\n이번 시간에는 유튜브 (채널 & 회원) API 설계했던것을 DB와 연동하는 실습을 해볼 예정입니다.\n1. DB에 테이블 생성\n회원(Users) 테이블\n\n채널(Cha..."
+  },
+  {
     "title": "[week5] 백엔드 심화 : 인증과 비동기처리(2) - 02/02",
     "date": "2026. 2. 2.",
     "url": "https://velog.io/@leekh010502/week5-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%8B%AC%ED%99%94-%EC%9D%B8%EC%A6%9D%EA%B3%BC-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%B2%98%EB%A6%AC2-0202",
@@ -10,17 +22,5 @@ export const blogData = [
     "date": "2026. 1. 30.",
     "url": "https://velog.io/@leekh010502/week4-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%8B%AC%ED%99%94-%EC%9D%B8%EC%A6%9D%EA%B3%BC-%EB%B9%84%EB%8F%99%EA%B8%B0%EC%B2%98%EB%A6%AC1-0130",
     "summary": "데이터베이스 (Database)\n데이터베이스란?\n데이터를 통합하여 효율적으로 관리하기 위한 데이터 집합체를 데이터베이스 (Database: DB)라고 한다.\n데이터를 구조화하여 관..."
-  },
-  {
-    "title": "[React 🔯] 01. JavaScript 기본",
-    "date": "2026. 1. 29.",
-    "url": "https://velog.io/@leekh010502/React-01.-JavaScript-%EA%B8%B0%EB%B3%B8",
-    "summary": "본 스터디는 이정환님의 한입 크기로 잘라먹는 리액트 기반으로 진행됩니다!!\n변수와 상수\n변수, 상수란?\n변수, 상수는 값을 저장하는 박스이다.\n변수\n특징: 담긴 값을 언제든 바꿀 ..."
-  },
-  {
-    "title": "[week4] 백엔드 기초 : Node.js + Express 기본 (10) - 01/29",
-    "date": "2026. 1. 29.",
-    "url": "https://velog.io/@leekh010502/week4-%EB%B0%B1%EC%97%94%EB%93%9C-%EA%B8%B0%EC%B4%88-Node.js-Express-%EA%B8%B0%EB%B3%B8-10-0129",
-    "summary": "Server와 Router의 역할\nServer : Request를 받음\nRouter : Request의 URL에 따라 루트(route)를 정해줌 = 어디로 갈지만 정해줌\n라우팅이란..."
   }
 ];
