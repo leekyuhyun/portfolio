@@ -1,5 +1,11 @@
 export const blogData = [
   {
+    "title": "[week5] 프로젝트 : Node.js 기반의 Rest API 구현(1) - 02/06",
+    "date": "2026. 2. 7.",
+    "url": "https://velog.io/@leekh010502/week5-%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Node.js-%EA%B8%B0%EB%B0%98%EC%9D%98-Rest-API-%EA%B5%AC%ED%98%841-0206",
+    "summary": "Book Store 프로젝트\n이번 2번째 프로젝트로 Book Store 프로젝트를 진행한다. 지금까지 학습한 node.js 기반으로 api와 데이터베이스를 설계할 예정이다.\n이번 ..."
+  },
+  {
     "title": "[React 🔯] 04. React.js 개론",
     "date": "2026. 2. 6.",
     "url": "https://velog.io/@leekh010502/React-04.-React.js-%EA%B0%9C%EB%A1%A0",
@@ -16,11 +22,5 @@ export const blogData = [
     "date": "2026. 2. 5.",
     "url": "https://velog.io/@leekh010502/React-02.-JavaScript-%EC%8B%AC%ED%99%94",
     "summary": "해당 학습 정리는 이정환 강사님의 한입 크기로 잘라먹는 React기반으로 작성하였습니다.\nTruthy & Falsy\n자바스크립트는 어떠한 값이 boolean 타입에 해당하는 참이거..."
-  },
-  {
-    "title": "[week5] 백엔드 심화 : 인증과 비동기 처리(5) - 02/05",
-    "date": "2026. 2. 5.",
-    "url": "https://velog.io/@leekh010502/week5-%EB%B0%B1%EC%97%94%EB%93%9C-%EC%8B%AC%ED%99%94-%EC%9D%B8%EC%A6%9D%EA%B3%BC-%EB%B9%84%EB%8F%99%EA%B8%B0-%EC%B2%98%EB%A6%AC5-0205",
-    "summary": "user.js에 validator 추가\n어제 배운 express-validator를 user.js에도 적용해보았습니다.\nconst validate = (req, res, next)..."
   }
 ];
